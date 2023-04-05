@@ -1,0 +1,50 @@
+/* 
+    There are a variety of properties we can alter to style text. 
+    Some change the color, size, positioning, style, etc... 
+*/
+main p{
+    border: 1px solid red;
+    margin: 10px 50px;
+    padding: 20px;
+}
+
+/* Changing the styling of basic text */
+#p1{
+    font-family:serif;/* specifies the generic font family for the text */
+    font-style:italic;/* specifies the font style for the text */
+    font-weight:900;/* specifies the boldness for the text */
+    font-size:1.0rem;/* specifies the size of the text */
+
+    color: lightseagreen;/* specifies the color of the text within the element */
+    background-color: palegoldenrod;/* specifies the background color of the element */
+    text-align: left;/* specifies the horizontal alignment of the text within the element */
+    text-decoration: underline;/* specifies the text decoration of the text within the element */
+    text-transform:capitalize;/* specifies the capitalization of the text within the element */
+}
+
+#p2{
+    font-family: 'La Belle Aurore', cursive;
+    font-style:oblique;
+    font-weight: 400;
+    font-size: 1.25rem;
+
+    color: darkblue;
+    background: paleturquoise;
+    text-align: right;
+    text-decoration: overline;
+    text-transform: uppercase;
+}
+
+#p3{
+    font-family: 'Times New Roman', monospace;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 3.0rem;
+
+    color:black;
+    background: lightslategray;
+    text-align:center;
+    text-decoration: dashed underline darkcyan 5px;
+    text-transform: lowercase;
+    text-shadow: 2px 2px 5px whitesmoke;
+}

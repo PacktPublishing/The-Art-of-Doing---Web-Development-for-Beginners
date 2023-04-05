@@ -1,0 +1,39 @@
+/*
+    Let's style all our divs that are inside our grid_wrappers so we can see them.
+    We will give them a set width and height.
+*/
+
+
+    /* 
+        If I easily want to center the text of the div in the middle of the square
+        I can turn the div into a flex container and use justify-content and align-items!
+    */
+
+
+/* Let's create our first 2x2 grid */
+
+
+    /* We can try to adjust how our divs are lining up within each row/column */
+
+    /* align-items effect the alignment of items on the current line. It does not work across multiple lines!*/
+
+
+
+
+    /* We can try to adjust how our divs are lining up within each row/column */
+
+    /* align-content effects the alignment of items across mulitple lines!*/
+
+
+
+    
+/* We want build the folllowing grid layout */
+/*
+       1    2    3
+      _____________
+    1|_____________|
+    2|   |         |
+    3|   |_________|
+    4|___|____|____| 
+    5|_____________|  
+*/

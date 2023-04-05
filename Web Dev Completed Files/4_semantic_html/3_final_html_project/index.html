@@ -1,0 +1,58 @@
+<!--
+    This is the final project for this section on HTML.
+    You are tasked with using everything you have learned about HTML to build
+    an HTML only website.
+
+    This site should include: 
+        Organized and semantic HTML including:
+            A common header and footer across all pages
+            A common navigation bar across all pages
+            A main section for each page holding various articles, sections, and more.
+            For divs/spans not using semantic HTML a proper class/id should be given.
+
+        Multiple internal webpages appropriately linked together.
+        Mutiple external links to outside webpages.
+        Multiple links to different sections of a given page.
+        
+        Multiple and/or appropriate use of headings, paragraphs, lists, and tables.
+        Multiple and/or appropriate use of text styling tags bold, italics, underline.
+        Multiple and/or appropriate use of images, inputs fields, buttons, and forms.
+        Multiple and/or appropriate use of divs, spans. 
+
+        Appropriate styling inside our HTML which includes:
+            Changing the background color of a given div
+            Changing the background color of a given span
+            Changing the width and height of a given picture
+            You may look up some other styling options..but remember, we will do this in CSS!
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to the Sewer</title>
+    </head>
+
+    <body>
+        <header style="background:lawngreen">
+            <h1>Welcome to the Sewer</h1>
+            <p>~~~ Are you old enough to fight the foot?</p>
+            <hr>
+        </header>
+
+        <main style="background:palegreen">
+            <h2>Enter Your Information</h2>
+            <form action="main.html">
+                <label for="username">Enter Your Username: </label>
+                <input type="text" id="username" name="my_username" placeholder="Username" required>
+
+                <label for="password">Enter Your Password: </label>
+                <input type="password" id="password" name="my_password" placeholder="Password" required minlength="4">
+
+                <label for="dob">Enter Date of Birth</label>
+                <input type="date" id="dob" name="my_dob" required>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </main>
+    </body>
+</html>

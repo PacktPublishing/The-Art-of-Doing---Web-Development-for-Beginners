@@ -1,0 +1,109 @@
+/*
+    The box model is used when talking about design and layout.
+    The box model is a box that wraps around every HTML element.
+    It consists of margins, borders, padding, and the actual content.
+    Margin - The space outside the border.  It is transparent.
+    Border - A boarder that goes around the padding and content.
+    Padding - The space inside the border.  It is transparent.
+    Content - The content of the box.  Where text and images appear.
+*/
+
+/* 
+    Width and height set the width and height of a content area.
+    We will do this for ALL divs using the div tag.
+    We can set the background color to see the dimensions. 
+*/
+div{
+    width:250px;
+    height:300px;
+    background: lightgreen;
+}
+
+/*
+    Lets alter the box around each div.
+    We will style each div differently so lets use the IDs we gave.
+    We'll create a border.
+    Lets also add some external space using margin and internal space using padding.
+    We can target the padding and margin in ALL directions by giving one value.
+*/
+#one{
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;    
+    padding:25px;
+    margin:10px;
+}
+
+/* We can target specific parts of the box model using key words top right bottom left. */
+#two{
+    border-width:3px;
+    border-top-width:8px;
+    border-color:#ffcdb2;
+    border-bottom-color:blue;
+    border-style: dashed;
+    padding-right: 100px;
+    margin-left:100px;
+}
+
+/*
+    We can target the top/bottom and right/left dimensions by passing two arguments
+    top/bottom is first then right/left.
+*/
+#three{
+    border-width: 5px 50px;
+    border-color: aqua;
+    border-style:dotted;
+    border-radius: 25px; /* Curvers the border */
+    padding: 10px 100px;
+    margin: 10px 200px;
+}
+
+/* 
+    We often can define all box properties in one command.  
+    For spacing it is top right bottom left. 
+    We can also add a box-shadow using horizontal, vertical, blur radius, spread radius and color
+*/
+#four{
+    border: 4px solid black;
+    padding:1px 10px 50px 100px;
+    margin:1px 10px 50px 100px;
+    box-shadow: -20px 20px 10px darkgreen;
+}
+
+/*
+    By default width and height are calculated as: 
+    element width + padding + border = actual width.
+    element height + padding + border = actual height.
+    This means when you set the width/height of an element, the element will ofen appear
+    larger than you have set because the padding and border are being added to the elements width and height.
+    The box-sizing property allows us to include pading and border in an elements total width and height. 
+*/
+#five{
+    border:4px solid black;
+    padding: 20px;
+    margin: 100px;
+    box-sizing: border-box;
+}
+
+/*
+    We can set the margin to auto in order to center the element in the horizontal direction.
+    Auto will adjust the spacing on each side so they are equal.
+    To do this your element MUST BE A BLOCK LEVEL ELEMENT!  Thankfully, div's are block level elements.
+*/
+#six{
+   border: 4px solid black;
+   padding: 20px 40px;
+   margin: 50px auto;
+   box-sizing: border-box; 
+}
+
+/* We can apply the box model to ANY element, not just divs! */
+button{
+    background: blue;
+    color: yellow;
+    border: 5px dotted blue;
+    margin: 50px 100px;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 5px lightblue;
+}

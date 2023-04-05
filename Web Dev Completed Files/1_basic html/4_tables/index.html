@@ -1,0 +1,92 @@
+<!--
+    A table tag <table></table> is another element that is used to organize data.
+    Within each table there are table rows indicated by the tag <tr></tr>.
+    When working within a table row, we can place a table heading or table data. 
+    The table heading tag <th></th> can label the rows, columns, or both with a heading.
+    The table data tag <td></td> are the individual squares of the table holding the data.
+-->
+<h1>Working With Tables</h1>
+
+<h2>Employee Information</h2>
+<table>
+    <!-- My entire first row will hold my table headings giving us a HORIZONTAL LAYOUT. -->
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+    </tr>
+
+    <!-- All subsequent rows will hold table data for each heading. -->
+    <tr>
+        <td>Mike</td>
+        <td>Eramo</td>
+        <td>36</td>
+        <td>Male</td>
+    </tr>
+    <tr>
+        <td>Mary</td>
+        <td>Smith</td>
+        <td>67</td>
+        <td>Female</td>
+    </tr>
+    <tr>
+        <td>Robin</td>
+        <td>Jones</td>
+        <td>26</td>
+        <td>Male</td>
+    </tr>
+    <tr>
+        <td>Bobby</td>
+        <td>Franks</td>
+        <td>14</td>
+        <td>Female</td>
+    </tr>
+</table>
+<hr>
+
+<!--
+    The caption tag <caption></caption> adds information to our table.
+    You can also add a <details> and <summary> tag to the caption.  
+    This gives the option to add more information in an "interactive" sense.
+    We can also put our headers in a column if we would like to change the structure of the table.
+-->
+<h2>Employee Information</h2>
+<table>
+    <caption>
+        <details>
+            <summary>Current Employees</summary>
+            <p>This table represents all employees as of 12/3/2022.</p>
+        </details>
+    </caption>
+
+    <!-- Now, each row will start with a heading that gives us VERTICAL LAYOUT. -->
+    <tr>
+        <th>First Name</th>
+        <td>Mike</td>
+        <td>Mary</td>
+        <td>Robin</td>
+        <td>Bobby</td>
+    </tr>
+    <tr>
+        <th>Last Name</th>
+        <td>Eramo</td>
+        <td>Smith</td>
+        <td>Jones</td>
+        <td>Franks</td>
+    </tr>
+    <tr>
+        <th>Age</th>
+        <td>36</td>
+        <td>67</td>
+        <td>26</td>
+        <td>14</td>
+    </tr>
+    <tr>
+        <th>Gender</th>
+        <td>Male</td>
+        <td>Female</td>
+        <td>Male</td>
+        <td>Female</td>
+    </tr>
+</table>

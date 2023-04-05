@@ -1,0 +1,92 @@
+<!--
+    An info page with informaiton about a specific 'item' in your collection. 
+    It should have the following:
+        A 'header' or title section/title banner at the top of your page
+        A paragraph with various style tags
+        A minimum of 3 images
+        A minimum of 1 external link
+        Appropriate heading, paragraph, list, and table tags
+        A 'navigation bar' linking to all pages in your site
+        A 'footer' or bottom section containing common info across all pages
+-->
+
+<!--
+    To organize your page, you MUST use proper html structure.
+    You MUST also have divs with the following names (id vs class)...
+        header
+        main
+        article
+        footer
+    You decide what content should go in them.
+    You can name your other divs as you see fit.   
+    You must also use a minimum of 1 span to style the text background within a paragraph.
+    Remember, each div should be styled with a different background color.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bulbasaur</title>
+    </head>
+
+    <body>
+        <div id="header" style="background:lightcoral">
+            <h1 id="top">All About Bulbasaur</h1>
+            <img src="poke.png" alt="pokeball to catch pokemon">
+            <img src="poke.png" alt="pokeball to catch pokemon">
+            <img src="poke.png" alt="pokeball to catch pokemon">
+            <hr>
+        </div>
+
+        <div id="main" style="background:lightgoldenrodyellow">
+            <div id="nav" style="background:lightgreen">
+                <h2>Learn More About the Original Three</h2>
+                <a href="bulb.html"><img src="bulb1.png" alt="bulbasuar pokemon 001" style="width: 100px;"></a>
+                <a href="char.html"><img src="char1.png" alt="charmander pokemon 004" style="width: 100px;"></a>
+                <a href="squirt.html"><img src="squirt1.png" alt="squirtle pokemon 007" style="width: 100px;"></a>
+                <hr>
+            </div>
+
+            <div class="article" style="background:lightgreen">
+                <h2>Learn About Bulbasaur!</h2>
+                <p>
+                    <span class="text_wrapper" style="background:green"><b>Bulbasaur</b></span> is a <i>plant based</i> Pokemon.<br>
+                    There is a plant seed on its back right from the day this Pokémon is born.<br> 
+                    The seed slowly grows larger.<br> 
+                    While it is young, it uses the nutrients that are stored 
+                    in the seed on its back in order to grow.
+                </p>
+            </div>
+
+            <div class="article" style="background:lightgreen">
+                <h3>Bulbasaur Evolution</h3>
+                <ol>
+                    <li>Bulbasaur</li>
+                    <li>Ivysaur</li>
+                    <li>Venusaur</li>
+                </ol>
+
+                <img src="bulb1.png" alt="Bulbasaur evolution step 1" style="width:400px">
+                <img src="bulb2.png" alt="Bulbasaur evolution step 2" style="width:400px">
+                <img src="bulb3.png" alt="Bulbasaur evolution step 3" style="width:400px">
+
+                <p>
+                    Learn more about <a href="https://www.pokemon.com/us/pokedex/bulbasaur">Bulbasaur!</a>
+                </p>
+                <hr>
+            </div>
+        </div>
+
+        <div id="footer" style="background:lightgoldenrodyellow">
+            <img src="poke.png" alt="pokeball to catch pokemon">
+            <img src="poke.png" alt="pokeball to catch pokemon">
+            <img src="poke.png" alt="pokeball to catch pokemon">
+            <a href="main.html">Home</a>
+            <a href="bulb.html">Bulbasaur</a>
+            <a href="char.html">Charmander</a>
+            <a href="squirt.html">Squirtle</a>
+            <img src="poke.png" alt="pokeball to catch pokemon">
+            <img src="poke.png" alt="pokeball to catch pokemon">
+            <img src="poke.png" alt="pokeball to catch pokemon">
+        </div>
+    </body>
+</html>

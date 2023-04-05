@@ -1,0 +1,61 @@
+<!-- 
+    The image tag is a self closing tag <img>...it doesn't need a closing tag!
+    The image tag has an attribute you must set - src; the source of the image.
+    This can be in our local directory (folder) or from the internet. 
+-->
+<h1>Adding Images to our Sites!</h1>
+
+<h2>Here is an image of the moon!</h2>
+<img src="moon.jpg">
+<hr>
+
+<!-- 
+    This image is way too big for my liking so we can resize it with the style attribute. 
+    We'll use pixels, px to resize.  A pixel is the smallest unit a screen can display.
+    We'll learn more about pixels when we discuss css.
+-->
+<h2>Here is the moon resized!</h2>
+<img src="moon.jpg" style="width:200px; height:200px">
+
+<!--
+    Changing the width and height of the picture can throw off the aspect ratio of the picture.
+-->
+<h2>Here is the moon resized with the aspect ratio intact!</h2>
+<img src="moon.jpg" style="width:200px;">
+
+<!--
+    Changing just the width will keep the aspect ratio of the pictcure and auto adjsut the height.
+-->
+
+<!--
+    It is always good practice to add an alt attribute to your images.
+    This is a text representation of what the picture is showing.
+    In case someone is visually impared or if your image doesn't load,
+    you can still convey meaning with the alternative text.
+-->
+<h2>Here is an image that will not load</h2>
+<img src="not_real.jpg">
+<img src="not_real.jpg" alt="This would be the text to describe our broken image.">
+
+<!-- We can use images as links! -->
+<h2>Here the moon is used a link!</h2>
+<a href="https://www.nasa.gov">
+    <img src="blood_moon.jpg" alt="A moon link to NASA" style="width:200px;">
+</a>
+
+<!--
+    We can even add images from other sites.
+    In google chrome, right click an image and select 'copy image address'.
+    Then paste that address as your src attribute.
+    Be careful though of copyright! 
+-->
+<h2>Here is an image from an outside website</h2>
+<img src="https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/ultraviolet-camera-spectrograph.jpg?itok=45pUf2If" alt="Scientists doing SCIENCE" style="width:500px;">
+
+<!--
+    We can add animated GIFS using giphy.  
+    Simply find a GIF, right click and copy source address.
+    Use this address as your img source.
+-->
+<h2>Here is an animated GIF</h2>
+<img src="https://media0.giphy.com/media/aN9GqoR7OD3nq/giphy.gif?cid=ecf05e47mbkb3t500xr4t111hjo6a80pc40egjb0edbj3ckt&rid=giphy.gif&ct=g" alt="The moon spinning on its axis.">

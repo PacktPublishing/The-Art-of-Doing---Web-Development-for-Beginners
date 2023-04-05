@@ -1,0 +1,61 @@
+<!--
+    Many different CSS properties require some measurment of length of size such as width.  
+    A length is a numerical value followed by some unit. Lenghts can be absolute or relative.
+    Absolute width is fixed no matter the screen size; such as the pixel px.
+    Relative width is relative to another length and can vary; such as %. 
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Units of Size - Element Width</title>
+        <link rel="stylesheet" href="style.css">
+    </head> 
+
+    <body>
+        <header>
+            <h1>Learning About Width!</h1>
+            <hr>
+        </header>
+
+        <main>
+            <h2>Element Width:  Pixel Vs. Percent</h2>
+            <!--
+                A pixel unit is one device pixel or dot of the display.  
+                % is a percentage size of a parent element.
+                Here the parent is the main element since we are nested inside the main tag.
+            -->
+            <h3>Parent is the main tag - the whole page wide.</h3>
+            <div class="pixel">300px, fixed width, parent- main tag</div>
+            <div class="percent">80%, relative width, parent- main tag</div>
+
+            <!--
+                Here the parent is a div or container we are creating.
+                Since we are nested inside the div we are creating.
+            -->
+            <h3>Parent is a smaller div - 400 pixels wide</h3>
+            <div id="parent_div">
+                <div class="pixel">300px, fixed width, parent- main tag</div>
+                <div class="percent">80%, relative width, parent- main tag</div>
+            </div>
+   
+            <!--
+                We can use pixels and percents to resize images.
+                We've done this before but now let's move the styling to css.
+            -->
+            <h3>Resizing Images</h3>
+            <img class="small_img" src="cat.jpg">
+            <img class="medium_img" src="cat.jpg">
+            <img class="large_img" src="cat.jpg">
+
+            <h3>Viewports</h3>
+            <div class="viewport">A viewport is the dimension of your computer screen!</div>
+        </main>
+
+        <footer>
+            <p>In style since the dawn of time.</p>
+        </footer>
+    </body>
+</html>
+
+            
+      

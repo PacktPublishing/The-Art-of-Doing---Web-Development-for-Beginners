@@ -1,0 +1,105 @@
+<!--
+    An inline element does not start on a new line.
+    They will be placed on the same line as the previous element. 
+    They will only take up as much horizontal width as is needed.
+    They will only take up as much vertical height as needed.
+    A nice way to show this is by adding a background color via the style attribute.
+
+    *Some elements are not ENTIERLY inline...but for now we will simply say they are.*
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inline Elements</title>
+    </head>
+
+    <body>
+        <h1>Learning About Inline Elements</h1>
+
+        <h2>Anchor Tags</h2>
+        <!-- Anchor tags (links) are inline elements. -->
+        <a href="" style="background: lightblue">Anchor tags are inline!</a>
+        <a href="" style="background: lightgreen">Anchor tags are inline!</a>
+        <a href="" style="background: lightyellow">Anchor</a>
+        
+        <!-- 
+            Because anchor tags are inline, we can have them inside our paragraph
+            and they will not be placed on a new line.
+        -->
+        <p>
+            This is a paragraph about whatever! This is a paragraph about whatever!
+            This is a paragraph about whatever! This is a paragraph about whatever!
+            This is a paragraph about whatever! This is a paragraph about whatever!
+            This is a paragraph about whatever! This is a paragraph about whatever!
+            This is a paragraph about whatever! This is a paragraph about whatever!
+            This is a paragraph about whatever! <a href="" style="background: purple">Inline Anchor</a>
+            This is a paragraph about whatever! This is a paragraph about whatever!
+            This is a paragraph about whatever! This is a paragraph about whatever!
+            This is a paragraph about whatever! This is a paragraph about whatever!
+        </p>
+      
+        <!-- 
+            Buttons are inline elements.  
+            If I make 4 buttons, they are all on the same line and are only as big as needed.
+        -->
+        <h2>Buttons and Fields</h2>
+        <button>This is a inline button</button>
+        <button>This is a inline button</button>
+        <button>This is a inline button. This is an inline button.</button>
+        <button>button</button>
+        
+        <!-- 
+            Input fields are inline elements. 
+            Created here, they will be on the same line as my buttons
+            Until we run out of horizontal space. 
+        -->
+        <input type="text" id="username" name="my_username" placeholder="Enter Username">
+        <input type="password" id="password" name="my_password" placeholder="Enter Password">
+        <input type="date" id="date" name="my_date" placeholder="Enter Date">
+        <input type="text" id="username" name="my_username" placeholder="Enter Username">
+        <input type="password" id="password" name="my_password" placeholder="Enter Password">
+        <input type="date" id="date" name="my_date" placeholder="Enter Date">
+        
+        <!-- 
+            Images are inline elements.
+            An image will only go to a new line if it is too big for the current line.
+         -->
+         <img src="cat.jpg" alt="a beautiful cat picture.">
+         <img src="cat.jpg" alt="a beautiful cat picture.">
+        
+        
+        <!-- 
+            Because image tags are inline, we can have them inside our paragraph
+            And they will not be placed on a new line.
+        -->
+        <p>
+            This is a paragraph about whatever! This is a paragraph about whatever!
+            This is a paragraph about whatever! This is a paragraph about whatever!
+            This is a paragraph about whatever! This is a paragraph about whatever!
+            This is a paragraph about whatever! This is a paragraph about whatever!
+            This is a paragraph about whatever! This is a paragraph about whatever!
+            This is a paragraph about whatever! <img src="cat.jpg" alt="a beautiful cat picture." width="25px">
+            This is a paragraph about whatever! This is a paragraph about whatever!
+            This is a paragraph about whatever! This is a paragraph about whatever!
+            This is a paragraph about whatever! This is a paragraph about whatever!
+        </p>
+        
+        
+        <!-- If images are small enough, they will stay on the same line because they are inline! -->
+        <img src="cat.jpg" alt="a beautiful cat picture." width="20%">
+        <img src="cat.jpg" alt="a beautiful cat picture." width="20%">
+        <img src="cat.jpg" alt="a beautiful cat picture." width="20%">
+        <img src="cat.jpg" alt="a beautiful cat picture." width="20%">
+
+        <!-- 
+            Many of these tags are not truely inline, they are inline-block...
+            If we can change the width, then our elements are inline-block.
+            We will discuss inline-block more in the future!
+        -->
+        <img src="cat.jpg" alt="a beautiful cat picture." width="40%"> <!-- inline-block-->
+        <a href="" style="background: orange; width: 50000px">This is my link</a> <!-- width does nothing; inline! -->
+    </body>
+</html>
+
+
+

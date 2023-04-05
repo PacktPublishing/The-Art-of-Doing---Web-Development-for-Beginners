@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Events</title>
+        <script defer src="script.js"></script>
+    </head>
+
+    <body>
+        <header>
+           <h1>We are Learning About Values!</h1>
+        </header>
+        
+        <main>
+            <h2>Input Text Example</h2>
+            <label for="name_input">Enter your name: </label>
+            <input type="text" id="name_input" name="my_name" placeholder="Enter Name" required>
+            <button id="name_btn">Submit</button>
+            <p id="name_message"></p>
+
+            <h2>Dropdown Example</h2>
+            <label for="teams">Choose a Football Team:</label>
+            <select id="teams" name="fav_team">
+                <option value="Giants">Giants :-)</option>
+                <option value="Jets">Jets :-(</option>
+                <option value="Bills">Bills :-)</option>
+                <option value="Patriots">Patriots :-)</option>
+            </select>
+            <button id="team_btn">Submit</button>
+            <p id="team_message"></p>
+
+            <h2>Radio Button Example</h2>
+            <form id="food_form">
+                <input type="radio" id="pizza" value="pizza" name="fav_food">
+                <label for="pizza">I want pizza!</label>
+                <input type="radio" id="burger" value="burger" name="fav_food">
+                <label for="burger">I want burger!</label>
+                <input type="radio" id="salad" value="salad" name="fav_food">
+                <label for="sald">I want salad!</label>
+                <!-- If the button is in the form, the form will submit and the page reload. -->
+            </form>
+            <button id="food_btn">Submit</button>
+            <p id="food_message"></p>
+        </main>
+
+        <footer>
+           <p>Interact with me.</p>
+        </footer>
+    </body>
+</html>

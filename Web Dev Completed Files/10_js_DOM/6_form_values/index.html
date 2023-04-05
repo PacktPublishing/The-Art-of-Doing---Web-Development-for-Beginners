@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Forms</title>
+        <script defer src="script.js"></script>
+    </head>
+
+    <body>
+        <header>
+           <h1>We Are Learning About Forms!</h1>
+        </header>
+        
+        <main>
+            <h2>Here is a form in which NOT all elements have a name attribute.</h2>
+            <h3>Only those elements with a name will have their data submitted!</h3>
+            <form id="form_1">
+                <input type="text" id="username" placeholder="Enter Your Username" required>
+                <input type="password" id="password" placeholder="Enter Your Password" required>
+                <label for="age_range">Choose an Age Range:</label>
+                <select id="age_range" name="my_age_range">
+                    <option value="0-18">0-18</option>
+                    <option value="18-30">18-30</option>
+                    <option value="30-55">30-55</option>
+                    <option value="55-75">55-75</option>
+                </select>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+            <br>
+            <br>
+
+            <h2>Here is a form in which ALL elements have a name attribute.</h2>
+            <h3>Now, all elements will have their data submitted!</h3>
+            <h3>The default form method is GET which shows all values in the url!  POST removes them from the url.</h3>
+            <form id="form_2" method="GET">
+                <input type="text" id="username" name="my_username" placeholder="Enter Your Username" required>
+                <input type="password" id="password" name="my_password" placeholder="Enter Your Password" required>
+                <label for="age_range">Choose an Age Range:</label>
+                <select id="age_range" name="my_age_range">
+                    <option value="0-18">0-18</option>
+                    <option value="18-30">18-30</option>
+                    <option value="30-55">30-55</option>
+                    <option value="55-75">55-75</option>
+                </select>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+            <br>
+            <br>
+
+            <h2>Here is a form in which ALL elements have a name attribute.</h2>
+            <h3>Now, all elements have their data submitted.</h3>
+            <h3>We will also prevent the reloading of the page on form submission.</h3>
+            <form id="form_3" method="POST">
+                <input type="text" id="username" name="my_username" placeholder="Enter Your Username" required>
+                <input type="password" id="password" name="my_password" placeholder="Enter Your Password" required>
+                <label for="age_range">Choose an Age Range:</label>
+                <select id="age_range" name="my_age_range">
+                    <option value="0-18">0-18</option>
+                    <option value="18-30">18-30</option>
+                    <option value="30-55">30-55</option>
+                    <option value="55-75">55-75</option>
+                </select>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+            <p id="form_3_message"></p>
+            <br>
+            <br>
+        </main>
+
+        <footer>
+           <p>Interact with me.</p>
+        </footer>
+    </body>
+</html>

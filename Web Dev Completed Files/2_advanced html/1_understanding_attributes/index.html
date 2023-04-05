@@ -1,0 +1,75 @@
+<!--
+    All html elements have attributes that provide additional information about the element.
+    They are always stated in the start tag of the elmenet and come in name/value pairs:  
+    name="value"
+-->
+<h1>An Introduciton to HTML Attributes</h1>
+
+<!-- 
+    The id attribute provides a specific unique id for an element.  
+    You should only have 1 element with a given specific id.
+    This will become more important as we get into cascade style sheets.
+-->
+<p id="main_paragraph">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam cumque magnam rerum non dolores aperiam fuga consequuntur ducimus repellendus, dolorem et excepturi molestiae voluptas quaerat nulla. Maiores mollitia corporis ut possimus harum facere cum. Quibusdam sequi nisi illo quod a eius, ipsum suscipit autem pariatur tenetur quae nesciunt voluptatum ipsam dolor, excepturi, fugiat rem consequatur quisquam quasi voluptates assumenda quidem repellendus. Saepe dolorum autem nobis doloremque soluta fugiat amet perspiciatis quia, at nostrum quas! Repellat consequuntur dignissimos totam, obcaecati reiciendis minima illo animi unde, voluptatum, perferendis hic laboriosam. Asperiores facilis delectus impedit tenetur labore iste distinctio error cumque, repellendus nam illum cum! Aperiam beatae dolore repellat ea in labore enim totam necessitatibus explicabo eveniet animi, nobis culpa alias, reprehenderit veniam! Voluptatibus, veniam blanditiis, inventore incidunt ratione qui omnis sequi aspernatur nihil commodi recusandae quis. Autem voluptates perspiciatis aut non odio accusamus unde porro tempore nam nisi aperiam dolores, obcaecati alias ratione inventore reiciendis corporis, quo nulla officiis magnam illum deleniti possimus tenetur! Nam odio dolorum sequi consequuntur accusamus eveniet, laborum saepe quisquam et iste sed. Aliquam unde distinctio facere accusantium voluptates eum architecto fuga deserunt quis tenetur quisquam eius praesentium ut nesciunt, doloremque, sint fugit laudantium nemo maiores assumenda, nobis voluptate est eaque? Eos vitae eveniet consequatur quae magni id aperiam ut incidunt placeat sit adipisci officia optio, debitis perferendis recusandae. In repellendus iure natus earum ab accusamus molestiae deserunt. Non obcaecati quae facere, harum ullam quisquam beatae nam corrupti quaerat placeat, at officiis ex, vitae accusantium id autem soluta.
+</p>
+
+<!--
+    The class attribute provides a way to group common elements together.
+    You can have as many elments with the same class as you would like.
+    This will become more important as we get into cascade style sheets.
+-->
+<p class="body_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo molestiae, possimus blanditiis porro inventore omnis nam ea. Inventore mollitia fuga, rerum sint commodi totam voluptates, praesentium dicta sequi aliquam, perspiciatis voluptatem! Suscipit, quas, odit blanditiis quia fuga qui ipsum reprehenderit soluta cum aspernatur minus tempore eum porro voluptas praesentium illo reiciendis, tenetur at? Pariatur quod laudantium in, amet, ex placeat et hic autem cumque molestiae sunt animi excepturi maxime culpa! Repellat, rem? Eligendi molestias rem autem fugiat dignissimos, animi vel fugit iusto ipsum odit qui voluptas soluta vero non laborum doloribus, placeat est atque ullam. Ea voluptas impedit facilis quo.</p>
+<p class="body_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nihil earum nam corporis eius sit maxime dolorem numquam, repellendus laudantium. Magnam, tempore molestias deserunt placeat est sit aut fugiat at debitis aspernatur accusantium quo alias, libero quam nulla delectus vel odio consequuntur. Adipisci possimus minus doloribus reprehenderit, provident est laudantium at reiciendis, atque blanditiis distinctio eveniet laboriosam natus? Quasi aspernatur in nesciunt eaque commodi adipisci distinctio libero animi, debitis quae ducimus omnis facere eius fugiat doloremque officiis unde! Incidunt labore aperiam excepturi ea? Sunt beatae quisquam odio soluta autem inventore, temporibus magni fugit. Sit molestiae modi beatae consequuntur in nam.</p>
+<p class="body_paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium laboriosam eligendi doloribus non aspernatur ratione quam incidunt quia sit consectetur cupiditate, expedita deserunt similique voluptas? Voluptates voluptas ratione minus soluta assumenda hic? Possimus quia voluptates minus necessitatibus. Laboriosam quaerat soluta maxime, sequi temporibus corporis, voluptates ipsum ex aut dolorum voluptas fugiat, sint odio id eos numquam molestias quisquam voluptatibus expedita esse eius autem beatae debitis. Sapiente suscipit ullam consequatur eveniet unde cupiditate, impedit libero laboriosam placeat inventore rerum repudiandae minus culpa sint praesentium odio molestias esse atque modi pariatur dignissimos, ut explicabo commodi distinctio. Totam adipisci quaerat inventore incidunt nemo?</p>
+<!--
+    Many of these attributes will become cruicial when we begin styling our websites.
+    We can use the style attriubte to show some of the basics of styling....
+    However, it is bad practice to style inside the html...We will use cascade style sheets!
+    DO NOT GET USED TO STYLING IN OUR HTML!
+-->
+<p class="body_paragraph" style="color: orange; background: darkblue; text-align: center; width: 50%">
+    This body paragraph has some STYLE!    
+</p>
+
+<!--
+    We can also use attributes to make our tables look much nicer!
+    Again, our styling should be done in a CSS file, 
+    but the style attribute is a nice way to learn about html attributes.
+-->
+<h2>Employee Information</h2>
+<table border="5px" style="width:100%" cellpadding="5px" cellspacing="5px">
+    <!-- My entire first row will hold my table headings giving us a HORIZONTAL LAYOUT. -->
+    <tr style="text-align: center;">
+        <th style="width: 25%">First Name</th>
+        <th style="width: 25%">Last Name</th>
+        <th style="width: 25%">Age</th>
+        <th style="width: 25%">Gender</th>
+    </tr>
+
+    <!-- All subsequent rows will hold table data for each heading. -->
+    <tr style="text-align: center;">
+        <td>Mike</td>
+        <td>Eramo</td>
+        <td>36</td>
+        <td>Male</td>
+    </tr>
+    <tr style="text-align: center;">
+        <td>Mary</td>
+        <td>Smith</td>
+        <td>67</td>
+        <td>Female</td>
+    </tr>
+    <tr style="text-align: center;">
+        <td>Robin</td>
+        <td>Jones</td>
+        <td>26</td>
+        <td>Male</td>
+    </tr>
+    <tr style="text-align: center;">
+        <td>Bobby</td>
+        <td>Franks</td>
+        <td>14</td>
+        <td>Female</td>
+    </tr>
+</table>

@@ -1,0 +1,76 @@
+<!--
+    In this project you are to create your own 'search engine' ala Google.
+    You are required to have the following:
+        A thematic header that mimics Google
+        A search section that mimics Google
+        A news section that has 'thumbnails' for a minimum of 6 news articles
+        A footer linking to other search engines.  
+    
+    You must use a combination of grid and flexbox layouts to design your page layout.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eramoogle</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <img class="small_img" src="search.png" alt="A search glass">
+            <h1><span class="red">E</span>r<span class="yellow">a</span>m<span class="green">o</span>o<span class="blue">g</span>l<span class="red">e</span></h1>
+            <img class="small_img" src="search.png" alt="A search glass">
+        </header>
+
+        <main>
+            <section id="search">
+                <form action="https://www.google.com/search">
+                    <input type="text" id="search_item" name="q">
+                    <div class="btn_wrapper">
+                        <button class="btn">Eramoogle Search</button>
+                        <button class="btn">I'm Feeling Lucky</button>
+                    </div>
+                </form>
+            </section>
+
+            <h2 id="news_headline">Todays News</h2>
+            <section id="news">
+                <div class="news_item">
+                    <h3>Baseball Attendance At All Time Highs</h3>
+                    <a href="https://www.google.com"><img class="medium_img" src="news_baseball.jpg"></a>
+                </div>
+                <div class="news_item">
+                    <h3>Docters Find Cure!</h3>
+                    <a href="https://www.google.com"><img class="medium_img" src="news_doctor.jpg"></a>
+                </div>
+                <div class="news_item">
+                    <h3>Fresh Food in Town</h3>
+                    <a href="https://www.google.com"><img class="medium_img" src="news_food.jpg"></a>
+                </div>
+                <div class="news_item">
+                    <h3>Popcorn or Candy?  The Debate is On!</h3>
+                    <a href="https://www.google.com"><img class="medium_img" src="news_movies.jpg"></a>
+                </div>
+                <div class="news_item">
+                    <h3>UN Leaders Meet at Summit</h3>
+                    <a href="https://www.google.com"><img class="medium_img" src="news_politics.jpg"></a>
+                </div>
+                <div class="news_item">
+                    <h3>How Productive Are You Really?</h3>
+                    <a href="https://www.google.com"><img class="medium_img" src="news_tech.jpg"></a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <a href="https://www.google.com">Google</a>
+            <a href="https://www.yahoo.com">Yahoo</a>
+            <p>Powered by Eramo. Refined by YOU!</p>
+            <a href="https://www.bing.com">Bing</a>
+            <a href="https://www.duckduckgo.com">Duck Duck Go</a>
+        </footer>
+    </body>
+</html>

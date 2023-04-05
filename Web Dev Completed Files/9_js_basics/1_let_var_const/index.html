@@ -1,0 +1,30 @@
+<!--
+    We can link our javscript (.js) files as a script file in our head tag.
+    However, the html will load sequentially top to bottom.  So our .js would load first.
+    This could be bad as we might be referencing some html elemnts in our js file
+    That have not yet been loaded by the web page!
+    We can prevent this by passing the defer attribute.
+    This will tell the browser to load all html FIRST, then load the javascript. 
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Our First .js File!</title>
+        <script defer src="script.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Learning About the Console</h1>
+        </header>
+        
+        <main>
+            <p>To open the console, right click in the browser and select 'inspect'.</p>
+        </main>
+
+        <footer>
+            <p>Interact with me.</p>
+        </footer>
+        
+    </body>
+</html>

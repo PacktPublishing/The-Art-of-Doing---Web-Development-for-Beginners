@@ -1,0 +1,73 @@
+/*
+    There are many different ways we can select elements in css to write rules.
+    When using multiple selector methods, 
+    rules applied in the most specific selector will take priority.
+
+    Some css properties are inherited from a parent elment while others are not.
+*/
+
+/* Universal selector...selects everything. */
+* {
+    background: cyan;
+}
+
+/* Element Selector...select all of one element.  Simply use the element name. */
+button{
+    background: beige;
+    color: blue;
+}
+
+/* Selector List...select multiple elements.  Use element name seperated by commas. */
+h1, h2 {
+    background: orange;
+    color: darkslateblue;
+}
+
+/* Class Selector....select multiple elements by class.  Use a period and then class name. */
+.info{
+    background: darkred;
+    color:white;
+}
+
+/* ID Selector...select a single element by id.  Use a hashtag and then id name. */
+#my_list{
+    background: goldenrod;
+    color:palevioletred;
+}
+
+/* 
+    Descendant Selector....Select all elements that are inside or descendant's of another
+    List elements sepearted by spaces.
+*/
+#my_list li{
+   background: aquamarine; 
+}
+
+/*
+    A combination of methods to select all elements inside our our div #my_div.
+    This will override any of the previous stylings because our selctor is more specific here.
+*/
+#my_div, #my_div *{
+    background: white;
+    color:black;
+}
+
+/* 
+    Let's style our footer because we can! It also gives us an opprotunity to talk about inheritence.
+    If we try to set the background and color of the footer; it looks like only the color changes!
+    The background does not change.
+
+    This is because we are applying styling to a parent element here...the footer.
+    What we actully see is the child elemnt...the paragraph.
+    Certain css properties are inheritied from a parent while others are not.
+    In this example, the color property is inherited from a parent.  The background propterty is not.
+*/
+footer{
+    background: greenyellow;
+    color: darkorchid;
+}
+
+/* We have to set the background property of the child to see the change we desire */
+footer p{
+    background: greenyellow;
+}

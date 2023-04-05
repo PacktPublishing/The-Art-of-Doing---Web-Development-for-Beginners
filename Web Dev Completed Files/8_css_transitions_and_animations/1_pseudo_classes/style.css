@@ -1,0 +1,112 @@
+/*
+    A css pseudo class is a keyword added to a selector that specifies a special state of the seleced element.  
+    It can be used to alter values of the selector in that state.
+    Some example sates include if you are hovering, clicking, or focused on an element.
+*/
+
+/* Style the whole body with a font and background color */
+body{
+    background: paleturquoise;
+
+}
+
+/* Use flexbox on my btn wrapper to put two buttons in a line */
+#btn_wrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Regular style for all buttons */
+button{
+    background: none;
+    color: blue;
+    border: 2px solid blue;
+    width: 250px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+
+/* 
+    Pseudo class selector for btn_hover. 
+    We will call the class name (btn_hover) followed by a colon and the pseudo class we want to select.
+    The hover class will trigger and make changes when a user hovers over the button. 
+*/
+#btn_hover:hover{
+    color: black;
+    border-color: yellow;
+    box-shadow: 5px 10px 10px yellow;
+    cursor: pointer;
+}
+
+/* 
+    Pseudo class selector for btn_active.
+    We will call the class name (btn_active) followed by a colon and the pseudo class we want to select.
+    The active class will trigger and make changes when the element is active (clicked).
+*/
+#btn_active:active{
+    color: black;
+    border-color: yellow;
+    box-shadow: 5px 10px 10px yellow;
+    cursor: crosshair;
+}
+
+/* Use flexbox on my input wrapper to put two inputs in a line */
+#input_wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+input{
+    width:200px;
+    border: none;
+    border-radius: 20px;
+}
+
+/*
+    Pseudo class selector for input_active.
+    The focus class will trigger and make changes when the element is in focus (selected).
+*/
+#name:focus{
+    background: lightsalmon;
+    color:green;
+}
+
+/* You can chain pseudo classes together */
+#email:focus:invalid{
+    border: 5px solid red;
+}
+
+#email:focus:valid{
+    border: 5px solid lawngreen;
+}
+
+/*
+    The nth-of-type pseudo-class is specified with a single argument.
+    This argument represents the pattern for matching elements.
+    This class matches elements based on their position among other elements with the same tag.
+*/ 
+p:hover:nth-of-type(1){
+    font-size: 1rem;
+    background: red;
+}
+p:hover:nth-of-type(2){
+    font-size: 1.4rem;
+    background: orange;
+}
+p:hover:nth-of-type(3){
+    font-size: 1.6rem;
+    background: green;
+}
+p:hover:nth-of-type(4){
+    font-size: 2.0rem;
+    background: blue;
+}
+
+p:hover:nth-of-type(2n){
+    color:yellow;
+}
+
+p:hover:nth-of-type(2n-1){
+    color:white;
+}

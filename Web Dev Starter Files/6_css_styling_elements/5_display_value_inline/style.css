@@ -1,0 +1,45 @@
+/* 
+    Every HTML element has a default display value; block or inline.
+
+    A block-level element ALWAYS starts on a new line and takes up the full horizontal width available.
+    We can specify the width of a block level element and it will take up that full width!
+    Commonly used block elements are <p>, <h1>, <ul>, <ol>, <li>, and  <div>.
+    
+
+    An inline-level element does not start on a new line and only takes up as much horizontal width as it needs.
+    We cannot specify the width of an inline element as they will only be as wide as needed.
+    Commonly used inline elmeents are <button>, <a>, <image>, <input>, and <span>.
+    
+    We can override the default display value to change the behavoir of the element.
+*/
+
+/* By default, anchor tags (links) are inline elements.  We can override and make them block */
+
+    /* 
+        We can add margin to inline elements but we CANNOT set the margin to auto.
+        This is because there is no As there is no extra horizontal space available for an inline element 
+        margin: auto means "there is no margin" for inline or inline-block elements. 
+    */
+
+
+/* By default, anchor tags (links) are inline elements.  We can override and make them block */
+
+
+
+/* By default, spans are inline elements.  However, we can override and make them block */
+
+
+
+
+/*  
+    Be default, images are inline-block elements.  We can alter their height and width.  
+    However, they are on the same line. 
+    We can override and make them block.
+*/
+
+
+/* 
+    By default, buttons are inline-block elements.  We can alter their height and width.  
+    However, they are on the same line.
+    We can override and make them block .
+*/

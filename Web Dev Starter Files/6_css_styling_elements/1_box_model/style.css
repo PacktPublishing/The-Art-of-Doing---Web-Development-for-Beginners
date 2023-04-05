@@ -1,0 +1,60 @@
+/*
+    The box model is used when talking about design and layout.
+    The box model is a box that wraps around every HTML element.
+    It consists of margins, borders, padding, and the actual content.
+    Margin - The space outside the border.  It is transparent.
+    Border - A boarder that goes around the padding and content.
+    Padding - The space inside the border.  It is transparent.
+    Content - The content of the box.  Where text and images appear.
+*/
+
+/* 
+    Width and height set the width and height of a content area.
+    We will do this for ALL divs using the div tag.
+    We can set the background color to see the dimensions. 
+*/
+
+
+/*
+    Lets alter the box around each div.
+    We will style each div differently so lets use the IDs we gave.
+    We'll create a border.
+    Lets also add some external space using margin and internal space using padding.
+    We can target the padding and margin in ALL directions by giving one value.
+*/
+
+
+/* We can target specific parts of the box model using key words top right bottom left. */
+
+
+/*
+    We can target the top/bottom and right/left dimensions by passing two arguments
+    top/bottom is first then right/left.
+*/
+
+
+/* 
+    We often can define all box properties in one command.  
+    For spacing it is top right bottom left. 
+    We can also add a box-shadow using horizontal, vertical, blur radius, spread radius and color
+*/
+
+
+/*
+    By default width and height are calculated as: 
+    element width + padding + border = actual width.
+    element height + padding + border = actual height.
+    This means when you set the width/height of an element, the element will ofen appear
+    larger than you have set because the padding and border are being added to the elements width and height.
+    The box-sizing property allows us to include pading and border in an elements total width and height. 
+*/
+
+
+/*
+    We can set the margin to auto in order to center the element in the horizontal direction.
+    Auto will adjust the spacing on each side so they are equal.
+    To do this your element MUST BE A BLOCK LEVEL ELEMENT!  Thankfully, div's are block level elements.
+*/
+
+
+/* We can apply the box model to ANY element, not just divs! */

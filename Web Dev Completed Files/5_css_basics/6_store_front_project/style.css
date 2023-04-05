@@ -1,0 +1,56 @@
+/*
+    --paradise-pink: #ef476fff;
+    --orange-yellow-crayola: #ffd166ff;
+    --caribbean-green: #06d6a0ff;
+    --blue-ncs: #118ab2ff;
+    --midnight-green-eagle-green: #073b4cff; 
+*/
+body{
+    width:80vw;
+}
+
+header{
+    background: #06d6a0;
+    font-size:1.5rem;
+}
+
+main{
+    background: #ffd166;
+    color:#118ab2;
+    font-size:1.2rem;
+}
+
+nav{
+    background:#118ab299;
+}
+
+.secondary_info{
+    background: #118ab2;
+    color:#ffd166;
+    font-size:1.0rem;
+}
+
+#page_content h2{
+    background: #ef476f;
+    color:black;
+}
+
+footer{
+    background: #ef476f;
+    color:#073b4c;
+    font-size:.90rem;
+}
+
+
+/* Image Classes */
+.small_img{
+    width:20%;
+}
+
+.medium_img{
+    width:50%;
+}
+
+.large_img{
+    width:100%;
+}

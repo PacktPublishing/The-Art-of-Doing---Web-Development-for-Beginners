@@ -1,0 +1,35 @@
+/* Lets change the font size of the body to better see the color effects. */
+
+
+/* 
+    You can specifiy color directly by name. 
+    color is the text color.
+    background-color or background is the background color.
+*/
+
+
+/* 
+    You can specifiy color directly by rgb
+    where each color channel value is a decimal number between 0 and 255.
+*/
+
+
+/*
+    You can specifiy color directly by rgba 
+    where each color channel value  is a decimal number between 0 and 255 
+    and a is the transparency or aphla channel ranging from 0 to 1.  0 is fully transparent.
+*/
+
+
+/*
+    You can specifiy color directly by hex 
+    where each color color channel value is a hexidecimal number between 00 to FF 
+    00 is 0 in decimal and FF is 255 in decimal.
+*/
+
+
+/*
+You can specifiy color directly by hexa 
+where each color color channel value is a hexidecimal number between 00 to FF 
+and you add the transparency or aphla channel ranging from 00 to FF.  00 is fully transparent.
+*/

@@ -1,0 +1,74 @@
+/*
+    The transform property appiles a 2d or 3d transformation to an element.
+    We can rotate, scale, translate, skew, etc...
+    rotate - a transformation that rotates an element around a fixed point without deforming it.
+    scale - a transformation that resizes an element.
+    translate - a transformation allows you to move an element from one place to another along an axis.
+    skew - a transformation that distorts each point within an element by a certain angle in the horizontal and vertical directions. 
+*/
+
+h2{
+    background: lightblue;
+    border: 5px solid darkblue;
+    color: darkgoldenrod;
+    width: 350px;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    padding: 20px;
+    margin:20px auto;
+}
+
+/* We will use nth-of-type pseudo-classes to select our h2 elements */
+h2:nth-of-type(2n):hover{
+    background-color: blue;
+}
+h2:nth-of-type(2n-1):hover{
+    background-color: salmon;
+}
+
+/* Various transform option */
+h2:nth-of-type(1):hover{
+    transform: rotate(10deg); /*Defines a 2d rotation by some angle*/
+}
+
+h2:nth-of-type(2):hover{
+    transform: rotateY(80deg) /*Define a 3d rotation by some angle on a given plane, X, Y, or Z */
+}
+
+h2:nth-of-type(3):hover{
+    transform: scale(0.5, 1.5); /*Defines a 2d scale transformation (x,y) */
+}
+
+h2:nth-of-type(4):hover{
+    transform: translate(-100px, 50px) /*Defines a 2d translation (x,y) */
+}
+
+h2:nth-of-type(5):hover{
+    transform: translateX(50px) /*Defines a translation along a given axis X, Y, or Z */
+}
+
+h2:nth-of-type(6):hover{
+    transform: skew(30deg, 50deg) /*Defines a 2d skew transformation (x,y) */
+}
+
+h2:nth-of-type(7):hover{
+    transform: skewY(50deg) /*Defines a skew on the given axis, X or Y*/
+}
+
+/* We can have multiple transforms on one line */
+h2:nth-of-type(8):hover{
+    transform: translate(100px, 50px) scale(0.2) rotate(180deg);
+}
+
+h2:nth-of-type(9):hover{
+    transform: translateY(-20px) skewX(75deg);
+}
+
+h2:nth-of-type(10):hover{
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 5px darkblue;
+}
+
+

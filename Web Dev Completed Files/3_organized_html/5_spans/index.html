@@ -1,0 +1,43 @@
+<!-- 
+    If a div is a block level container, the span tag <span></span> is an inline container.
+    Spans are powerful because we can give them a class or id attribute which we can 
+    later target using css to style specific setions of our website. 
+    Imagine we wanted to format a section of text in a paragraph with a given background color...
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Working With Spans</title>
+    </head>
+
+    <body>
+        <h1>Spans - An Inline Element Container</h1>
+        <!-- We could try to style the whole paragraph...wrong. -->
+       <p style="background: lightgreen">
+            Here is a paragraph.  Maybe I want to style THIS SECITON A SPECIFIC WAY!
+            If I style the whole paragraph, the WHOLE paragraph will be styled the same way.
+            This is not the desired result!  How can we style just a section of this text?!?!
+       </p>
+        
+        <!-- We could try to create a div around the section of text...wrong. -->
+        <p>
+            Here is a paragraph.  Maybe I want to style 
+            <div id="text_wrapper_div" style="background:lightgreen">THIS SECITON A SPECIFIC WAY!</div>
+            If I use a div to target that seciton it places the section on a new line and takes up
+            the whole of the screen since a div is a block level element.
+            This is not the desired result! How can we style just a section of this text?!?!
+       </p>
+        
+        <!-- We could use a span (inline container) to wrap the text...correct! -->
+        <p>
+            Here is a paragraph.  Maybe I want to style 
+            <span id="text_wrapper_span" style="background:lightgreen">THIS SECITON A SPECIFIC WAY!</span>
+            To do this, I just have to wrap the text in a span.  Even though a paragraph is a block 
+            level element, the span is an inline elmeent and it will not create a new line
+            and it only takes up the width required.  This is the desired result.  
+       </p>
+    </body>
+</html>
+
+
+        

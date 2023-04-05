@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mike's T-shirt Store</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+        <script defer src="price_script.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <img src="shirt_header.jpg" class="small_img">
+            <div>
+                <h1>Mike's T-Shirt Store</h1>
+                <h6>Where we dress, for success!</h6>
+            </div>
+            <img src="shirt_header.jpg" class="small_img">
+        </header>
+
+        <main id="tool">
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="design.html">Design</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="sizing.html">Sizing</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div id="tool_div">
+                <h2>Price Calculator</h2>
+                <div id="tool_calc">
+                   <div>
+                        <label for="quantity_1">Quantity of S, M, L ($10.00 each)</label>
+                        <input type="number" id="quantity_1" min="0">
+                   </div>
+
+                   <div>
+                        <label for="quantity_2">Quantity of XL ($12.00 each)</label>
+                        <input type="number" id="quantity_2" min="0">
+                   </div>
+
+                   <div>
+                        <button id="tool_btn">Calculate</button>
+                   </div>
+                </div>
+
+                <div id="tool_values">
+                    <h3>Subtotal:</h3>
+                    <h3>Tax:</h3>
+                    <h3>Total:</h3>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Call today:  1-239-867-5309</p>
+        </footer>
+    </body>
+</html>

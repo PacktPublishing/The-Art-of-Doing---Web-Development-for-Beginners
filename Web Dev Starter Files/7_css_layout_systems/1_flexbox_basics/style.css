@@ -1,0 +1,51 @@
+/*
+    Flexbox is a way to layout items in ONE DIMENSION.  
+    Flexbox lays items out along either the horizontal or the vertical axis.
+    To do this, you have to decide whether you want a row-based or a column-based layout.
+    Flexbox also allows elements to change their size dynamically inside a container.
+*/
+
+/* Let's style each of our divs in seperate flexbox containers */
+
+
+/* We will apply different flexbox styilng options to each of our flexbox containers */
+
+    /* 
+        Apply flexbox to our flexbox container.  As soon as this happens note all elements
+        will be aligned in a horizontal row by default.  Also, if you shrink the browser, 
+        the elements scale their size to fit within the given row.  
+    */
+
+
+    /*
+        Each flexbox container has a 'main axis' and a 'cross axis' in which the elements
+        within the flexbox are aligned.  By default, since our flexbox container is aligend
+        in a horizontal row, the 'main axis' is the horizontal axis and the 'cross axis'
+        is the vertical axis. We style the elements based on these axes.
+    */
+
+    /* To style along the main axis we can use the justify-content property. */
+    
+
+    /*To style along the cross axis we can use the align-items property. */
+
+
+
+
+    /* 
+        We can change the default row alignment to a column alignement using the 
+        flex-direction property.  This will make a column layout in which the main axis
+        is the vertical axis and the cross axis is the horizontal axis.
+    */
+
+
+    /* 
+        Now when we use justify-content to center, it is trying to center along the main axis
+        which is the vertical axis.  It will not center horizontally in our screen but in the 
+        vertical height of the flex container!
+    */
+  
+
+    /* Since the horizontal axis is now the cross axis, we can align horizontally using align-items */
+
+

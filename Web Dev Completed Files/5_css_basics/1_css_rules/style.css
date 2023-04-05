@@ -1,0 +1,48 @@
+/*
+    css works by selecting specific elements on a linked html document and writing rules for that element.
+    A css rule needs a selector (element on html) and then the corresponding styling rules.
+    A rule requires a property and a value seperated by a colon. 
+    Given rules will be applied to all elements within the most specific specification for a selector.
+*/
+
+/* This is non-specific rule that will style EVERYTHING within the body tag */
+body{
+    background:paleturquoise; /* Background color of the elment (background-color) */
+    color:red; /* Text color of the element */
+
+    /* We can even set a background image! */
+    background-image: url(fish.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*
+    We can override the body styling rule by selecting an elemenet that is more specific.
+    Since the h1/h2 tag is more specific than the body tag, 
+    all h1/h2 elements will be styled following these specific rules, not the body rules.
+*/
+h1{
+    background-color: purple;
+    color: lightgreen;
+}
+
+h2{
+    background: blue;
+    color: aliceblue;
+}
+
+/*
+    We can override only a portion of the body rules.
+    This time we'll select a more specific tag, h3, but only overwrite certain rules.
+    The rules we did not overwrite will follow the rules laid out in our body rules....sometimes :-)
+    Note the text will be red here as defined in the body.
+*/
+h3{
+    background: yellow;
+}
+
+/*
+    If we don't apply any styling rules to the paragraph tag 
+    it will simply follow the styling rules of the body because it is nested inside the body.
+    Note, the text will be red.
+*/

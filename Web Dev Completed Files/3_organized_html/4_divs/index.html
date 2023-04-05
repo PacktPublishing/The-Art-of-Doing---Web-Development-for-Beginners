@@ -1,0 +1,80 @@
+<!-- 
+    The div (divider or container) tag <div></div> can be used to group content together. 
+    This is POWERFUL as it can be used to define a section of html elements.
+    We can give a div that is holding element an id or class attribute.
+    Later we can target the entire div to style specific setions of content on our website.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Working With Divs</title>
+    </head>
+
+    <body>
+        <h1>Divs - The Block Level Element Container</h1>
+        <!-- Here is some ungrouped content. -->
+        <h2 style="background: lightgreen">Ungroupd Content Here</h2>
+        <p style="background: lightgreen">
+            Here are some html elements that are not in a div.
+            They are just simply placed inside their respective tags.
+        </p>
+
+        <pre style="background: lightgreen">
+            _._     _,-'""`-._
+            (,-.`._,'(       |\`-/|
+                `-.-' \ )-`( , o o)
+                      `-    \`_`"'-
+        </pre>
+        <p style="background: lightgreen">That was a cat!</p>
+        
+        <!-- 
+            Here is content grouped together inside of a div!
+            If this div is unique on our page we can give it an id. 
+        -->
+        <div id="cat_section" style="background: lightcoral">
+            <h2>Groupd Content Here Inside a Div</h2>
+            <p>
+                Here are some html elements that are not in a div.
+                They are just simply placed inside their respective tags.
+            </p>
+    
+            <pre>
+                _._     _,-'""`-._
+                (,-.`._,'(       |\`-/|
+                    `-.-' \ )-`( , o o)
+                          `-    \`_`"'-
+            </pre>
+            <p>That was a cat!</p>
+        </div>
+
+        <!--
+            Divs are block level elements.  
+            This means they will take up as much horizontal width as they can.
+            They will also always be on new lines.
+            We can wrap inline elments inside of a div to place them on a new line.
+            There are BETTER ways to do this but for now, this is good to show off divs.
+        -->
+    
+        <!-- Recall images are inline(ish) elements so they will be placed on the same line by default. -->
+        <img src="cat.jpg" alt="A cute cat picture" width="25%">
+        <img src="cat.jpg" alt="A cute cat picture" width="25%">
+        <img src="cat.jpg" alt="A cute cat picture" width="25%">
+        
+        <!-- 
+            We can wrap the images in a div to put them on new lines!
+            Since these divs are NOT unique we can't give them an id, but should give a class. 
+        -->
+        <div class="cat_wrapper">
+            <img src="cat.jpg" alt="A cute cat picture" width="25%">
+        </div>
+        <div class="cat_wrapper">
+            <img src="cat.jpg" alt="A cute cat picture" width="25%">
+        </div>
+        <div class="cat_wrapper">
+            <img src="cat.jpg" alt="A cute cat picture" width="25%">
+        </div>
+    </body>
+</html>
+
+
+       

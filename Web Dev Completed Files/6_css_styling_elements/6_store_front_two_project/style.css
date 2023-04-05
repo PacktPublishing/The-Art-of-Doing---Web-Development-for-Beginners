@@ -1,0 +1,151 @@
+/*
+    "Light Goldenrod Yellow":"eaf0ce",
+    "Silver Sand":"c0c5c1",
+    "Roman Silver":"7d8491",
+    "English Violet":"574b60",
+    "English Violet 2":"3f334d"
+*/
+
+/* Index Page Styling */
+* {
+    background: #c0c5c1;
+}
+
+header{
+    background: #574b60;
+    color:#eaf0ce;
+    font-size: 1.5rem;
+    font-family: 'Crimson Text', serif;
+    text-align: center;
+    text-shadow: 10px 10px 50px #eaf0ce;
+}
+
+header h1, header p{
+    background: #7d8491; /* Background color is NOT inheretied from a parent element */
+}
+
+footer p{
+    background: #7d8491;
+    color: #eaf0ce;
+    font-family: 'Crimson Text', serif;
+    text-align: center;
+}
+
+.small_img{
+    width: 25%;
+}
+
+.medium_img{
+    width: 35%;
+}
+
+.large_img{
+    width: 50%;
+}
+
+#welcome img{
+    display: block;
+    margin: 10px auto;
+}
+
+#welcome a{
+    display: block;
+    margin: 10px auto;
+    font-family: 'Crimson Text', serif;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Home Page Styling */
+nav{
+    text-align: center;
+}
+
+a{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 10%;
+
+    color: #3f334d;
+    font-family: 'crimson Text', serif;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none; /* Removes the visual hyperlink */
+    border: 2px solid #3f334d;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #7d8491;
+
+    padding: 10px 20px;
+    margin-bottom: 5px;
+}
+
+article{
+    display: inline-block;
+    width:40%;
+    margin: 20px;
+}
+
+#content{
+    text-align: center;
+}
+
+#reviews{
+    margin: auto;
+    text-align: center;
+    background: #3f334d;
+}
+
+.review{
+    display:inline-block;
+    width:30%;
+    background: #574b60;
+    padding: 10px;
+    margin: 5px;
+}
+
+.review p{
+    background: #574b60;
+    color: #eaf0ce;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Contact Page Styling */
+#newsletter{
+    text-align: center;
+    border: 3px solid #eaf0ce;
+    padding:10px;
+    padding-bottom:15px;
+    margin-top:25px;
+}
+
+/* Pricing Page Stylinlg */
+table{
+    border: 3px solid #3f334d;
+    width: 80%;
+    margin: 20px auto;
+}
+
+th{
+    font-size: 2rem;
+    color: #eaf0ce;
+    background: #574b60;
+}
+
+td{
+    text-align: center;
+    padding: 20px;
+    color:#eaf0ce;
+    background: #7d8491;
+}
+
+/* Picture Page Styling */
+.picture_row{
+    text-align: center;
+    padding: 25px;
+}
+
+.picture_row img{
+    margin: 5px 50px;
+    box-shadow: 10px 10px 10px #574b60;
+}

@@ -1,0 +1,28 @@
+/* We will style our 'pixel' tags with a font-size of pixels. */
+
+
+/* 
+    Because we styled the previous tags with a font size expressed in pixels, those sizes are ABSOLUTE
+    They will not change as we change the font size of the parent div or the root html element.
+*/
+
+
+
+/* We will style our 'em' tags with a font size of em */
+
+
+/*
+    Because we styled the previous tags with a font size expressed in em, those sizes are RELATIVE
+    They will change as we change the font size of the parent div only!
+    They will not change as we change the font size of the root HTML element.
+*/
+
+
+/* We will style our 'rem' tags with a font size or rem */
+
+
+/*
+    Because we styled the previous tags with a font size expressed in rem, those sizes are RELATIVE
+    They will not change as we change the font size of the parent div.
+    They will change as we change the font size of the root HTML element only!
+*/

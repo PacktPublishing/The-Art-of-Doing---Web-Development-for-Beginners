@@ -1,0 +1,37 @@
+/*
+    Transitions:
+        Are generally best for simple from-to movements.
+        Can only move from initial to final state, no intermediate steps.
+        Can only run once.
+        Require a trigger to run (like mouse hover)
+        Run forwards when triggered and in reverse when trigger is removed
+    Animations:
+        Can move from initial to final state, with intermediate steps in between
+        Can loop infinitely thanks to animation-iteration-count property
+        Can be triggered but can also run automatically
+        Can run forwards, in reverse, or alternate directions
+*/
+
+/* Set the styling for our transition class (our divs) */
+
+
+/* 
+    -- The animation code --
+    Keyframes are used to control animations.
+    You specify animations inside a keyframes rule.
+    To get an animation to work, you must then bind the animation to an element.
+*/
+
+/* We can use the from and to keywords to control the animation */
+
+
+/* We can use percentage values.  You can choose any percentage you want */
+
+
+/* We can change more than one property */
+
+
+/* 
+    With our keyframes created, we will now bind the keyframe by it's name to the animation property of a given element.  
+    You must give a the name of the keyframe to use for the animation and the duration.
+*/

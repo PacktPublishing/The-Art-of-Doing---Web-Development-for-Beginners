@@ -1,0 +1,77 @@
+<!-- 
+    Interactive HTML tags are specifically intended for user interaction.
+    Imagine, these html elements as being ways to pass user information to the backend of our site.
+    We will have to use Javascript to program the functionality of actually doing something
+    with this information.
+-->
+<h1>Interactive HTML Tags</h1>
+
+<!-- 
+    The button tag <button></button> creates a clickable button.
+    This button has no functionality as HTML is a markup language, not a programming language.
+    We will need JavaScript to give bring our buttons to life.
+    The default button type is a submit button.
+ -->
+<h2>Here are some buttons!</h2>
+<button>Purchase Now!</button>
+<button>Sign Up Today!</button>
+<button>Register Here!</button>
+<button>button</button>
+<hr>
+
+<!-- 
+    The input tag <input> is a self closing tag used to get user input.
+    It requires a type attribute to state what type of input the website is requesting.
+    There are MANY different types of inputs and optional attributes such as placholder text.
+    Depending on the input type, the way the information is collected from the user will vary. 
+ -->
+<h2>Here are some input fields!</h2>
+<input type="text" placeholder="Enter Username">
+<input type="password" placeholder="Enter Password">
+<input type="date">
+<input type="time">
+<input type="color">
+<input type="file">
+<hr>
+
+<!-- 
+    Radio buttons are linked input fields.
+    Only one radio button can be selected at a time.
+    The id attribute is how we can refernce the radio button.
+    The value attribute is the given value selected when the radio button is clicked.
+    The name attriubte is what links all of the radio buttons together.
+    A label tag can be used to and linked to each button through the id to provide text.
+-->
+<h2>Here are some radio buttons!</h2>
+<input type="radio" id="pizza" value="pizza" name="fav_food">
+<label for="pizza">I want pizza!</label>
+<input type="radio" id="burger" value="burger" name="fav_food">
+<label for="burger">I want a burger!</label>
+<input type="radio" id="salad" value="salad" name="fav_food">
+<label for="pizza">I want a salad!</label>
+
+<!--
+    The <select> element is used to create a drop-down list.
+    The <select> elements holds option elments, each having their own value when chosen.
+    Only one option element can be selected at a time.
+-->
+<h2>Here are some select elements; aka Dropdown Menu!</h2>
+<label for="teams">Choose a Football Team:</label>
+<select id="teams" name="fav_team">
+    <option value="Giants">Giants</option>
+    <option value="Jets">Jets</option>
+    <option value="Bills">Bills</option>
+    <option value="Patriots">Patriots</option>
+</select>
+
+<!-- 
+    Checkboxes are unlinked input fields.
+    Multiple checkboxes can be selected at the same time.
+-->
+<h2>Here are some checkboxes!</h2>
+<input type="checkbox" id="red" value="red" name="fav_colors">
+<label for="red">I like the color red</label>
+<input type="checkbox" id="green" value="green" name="fav_colors">
+<label for="green">I like the color green</label>
+<input type="checkbox" id="blue" value="blue" name="fav_colors">
+<label for="blue">I like the color blue</label>

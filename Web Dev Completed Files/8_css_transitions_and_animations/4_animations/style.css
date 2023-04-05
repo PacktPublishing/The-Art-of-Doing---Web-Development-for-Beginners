@@ -1,0 +1,76 @@
+/*
+    Transitions:
+        Are generally best for simple from-to movements.
+        Can only move from initial to final state, no intermediate steps.
+        Can only run once.
+        Require a trigger to run (like mouse hover)
+        Run forwards when triggered and in reverse when trigger is removed
+    Animations:
+        Can move from initial to final state, with intermediate steps in between
+        Can loop infinitely thanks to animation-iteration-count property
+        Can be triggered but can also run automatically
+        Can run forwards, in reverse, or alternate directions
+*/
+
+/* Set the styling for our transition class (our divs) */
+.animation{
+    background: lightcoral;
+    width:300px;
+    height:300px;
+    margin: 10px 50px;
+}
+
+/* 
+    -- The animation code --
+    Keyframes are used to control animations.
+    You specify animations inside a keyframes rule.
+    To get an animation to work, you must then bind the animation to an element.
+*/
+
+/* We can use the from and to keywords to control the animation */
+@keyframes animation1 {
+    from {background: lightcoral;}
+    to {background: lightblue;}
+}
+
+/* We can use percentage values.  You can choose any percentage you want */
+@keyframes animation2 {
+    0% {background: lightcoral;}
+    25% {background: lightgreen;}
+    50% {background: lightblue;}
+    75% {background: lightyellow;}
+    100% {background: lightcoral;}
+}
+
+/* We can change more than one property */
+@keyframes animation3{
+    from {background: lightcoral; width:300px; height:300px; border-radius: 0%;}
+    to {background: lightblue; width:50px; height:50px; border-radius: 50%;}
+}
+
+/* 
+    With our keyframes created, we will now bind the keyframe by it's name to the animation property of a given element.  
+    You must give a the name of the keyframe to use for the animation and the duration.
+*/
+#div1{
+    animation: animation1 4s;
+}
+
+#div2{
+    animation: animation2 4s;
+    animation-delay: 5s;
+    animation-iteration-count: 3;
+}
+
+#div3{
+    animation: animation3 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#div4{
+    animation: animation3 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}

@@ -1,0 +1,54 @@
+<!--
+    A block-level element ALWAYS starts on a new line. 
+    It takes up the full horizontal width of it's container (what it is inside of).
+    It takes up only as much vertical height as needed to fit the contents of the element.
+    A nice way to show this is by adding a background color via the style attribute.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Block Level Elements</title>
+    </head>
+
+    <body>
+        <h1>Learning About Block Level Elements</h1>
+        <!--
+            Headings are block level elements.
+            Each time we make a new heading they are on a new line. 
+            They take up the full width of their parent container (the screen).
+            The height will only be as tall as needed to fit the content.
+        -->
+        <h2>Headings</h2>
+        <h3 style="background: lightblue">A heading is a block level element.</h3>
+        <h3 style="background: lightblue">A heading is a block level element.</h3>
+        <h3 style="background: lightblue; font-size: 100px;">A heading is a block level element.</h3>
+       
+        
+        <!-- Paragraphs are block level elements. -->
+       <h2>Paragraphs</h2>
+       <p style="background: lightgreen">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis suscipit dicta officia eum laboriosam qui officiis enim veritatis sed reprehenderit assumenda, nobis libero in, ipsa beatae praesentium nisi odio, architecto modi vitae. Minus fugit nulla voluptates tenetur maiores corporis maxime accusamus ipsa sed quod minima adipisci molestias, totam nihil possimus? Dolorum quia, alias ut nostrum ipsa ratione. Praesentium error aliquid reprehenderit ad id sunt dolores enim ratione quidem cumque eaque, ullam possimus quis architecto pariatur natus porro quo suscipit. Id, obcaecati modi inventore reprehenderit esse veritatis velit voluptates sapiente, ullam voluptas consequatur officiis? Consequatur autem ipsa sint, vitae obcaecati harum fugit molestiae consectetur repellendus id voluptas blanditiis ipsam reiciendis dolor praesentium culpa. Rem facere optio perferendis fuga, aliquid quo totam est, adipisci, rerum nisi accusantium praesentium. Quisquam enim eligendi incidunt modi consequuntur cum corrupti omnis! Voluptatibus perferendis quia architecto culpa deleniti ducimus, ad aliquam voluptatum pariatur sed autem asperiores necessitatibus repellendus, quo alias beatae laudantium eligendi! Doloremque provident cum odit hic, quisquam veniam qui est, magnam nostrum, consectetur velit eaque nesciunt dolorum culpa vero! Harum ea numquam sint itaque impedit, voluptates rem quidem blanditiis! Dolorem, natus reprehenderit illum porro eaque at ipsum, nulla rerum a voluptate optio. Aliquam doloribus odit dolorem labore fuga repellat quia quo asperiores magnam! Nam unde ut, non beatae laborum adipisci ipsam obcaecati error eligendi modi similique consectetur mollitia voluptates porro suscipit inventore officiis animi pariatur architecto eos in. Aliquid omnis ipsum impedit repellendus suscipit optio dignissimos eum deleniti. Placeat vero beatae nesciunt assumenda est.</p>
+        
+        <!-- Lists and list items are block level elements. -->
+        <h2>Lists</h2>
+        <ul style="background: lightcoral">
+            <li>Block Elements</li>
+            <li>Take Up</li>
+            <li>All Available</li>
+            <li style="background: lightgray">Space</li>
+        </ul>
+        
+        <!-- 
+            Forms are block level elements.  
+            However, the label, input fields and buttons inside the form are NOT!
+            Note how the lable, input field, and button are NOT on new lines
+            And only take up as much space as required!
+        -->
+        <h2>Forms</h2>
+        <form style="background: lightsalmon">
+            <label for="username">Enter Username</label>
+            <input style="background: blue" type="text" id="username" name="my_username" placeholder="Enter Your Username">
+            <button style="background: red" type="submit">Submit</button>
+            <button style="background: green" type="reset">Reset</button>
+        </form>
+    </body>
+</html>        

@@ -1,0 +1,26 @@
+/*
+    Lets set some styling for pixel values. 
+    The pixel values are the same size regardless of the parent element (main or div).
+    They don't resize as the window changes size.  
+    They are absolute!
+*/
+
+
+/*
+    Lets set some styling for the percentage values. 
+    Both percentage values are 80% but it is a different size depending on the parent element.  
+    Our first parent is the main tag so it takes up 80% of that.  
+    Our second parent is the parent_div so it takes up 80% of that.  
+    As the browser changes size, these elements change size as well as to always maintain 
+    80% of the their parent element.  
+    They are relative!
+*/
+
+
+/* Lets also style our parent div so we can see it better. */
+
+
+/* Lets create some image classes to style a small, medium, and large image. */
+
+
+/* Viewport is a lot like percentage but it allows us to better set the height of our elements. */

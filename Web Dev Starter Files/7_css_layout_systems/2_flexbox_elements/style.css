@@ -1,0 +1,29 @@
+/* 
+    Our first flex wrapper will have a default row layout.
+    All elements inside this container will be place in the same row.
+*/
+
+
+/* 
+    Our second flex wrapper will have a column layout.
+    All elements inside this container will be place in the same column.
+*/
+
+
+/*
+    Our third flex wrapper will have nested flex elements.
+    The outer flex element will have a row layout. 
+    - elements inside will be placed in 1 row.
+*/
+
+
+/* 
+    The inner flex elements will have a column layout. 
+    - elements inside will be placed in 1 column.
+*/
+
+    /* 
+        To center the text we use text-align.  
+        align-items will try to center our block level elements! 
+        But block level elements take up the full width!
+    */

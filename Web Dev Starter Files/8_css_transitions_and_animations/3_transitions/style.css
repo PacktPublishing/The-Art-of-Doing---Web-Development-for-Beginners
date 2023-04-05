@@ -1,0 +1,57 @@
+/*
+    Transitions allow you to change a property value smoothly over a given duration.
+    Instead of having property changes take effect immediately, you can cause the changes in a property to take place over a period of time. 
+    You have to specify two things:  The property to change and the duration.
+*/
+
+/* Set the styling for our transition class (our divs) */
+
+
+/* 
+    Give a transition for background color and border radius of 2s 
+    You must give a transition property (the name of the css property to which the transition should be applied)
+    You must give a transition duration (the duration over which the transition should occur)
+*/
+
+
+/*
+    Now that the transition property is set for div1, we will trigger the change when we hover over the div.
+    Rather than changing these properties instantaneously, the changes will occur over the duration specified in the transition.
+*/
+
+
+/* Give a transition for margin, shadow, and opacity of 4s */
+
+
+/* Specify that the transition should occur when we click div2 */
+
+
+/* Give a transition for transform and background color of 2s */
+
+
+/* Sepcify that the transition should occur when we hover over div3 */
+
+
+/* 
+    The transition-timing-function property specifies the speed curve of the transition effect.
+    We can ease (slow start, then fast, slow end).
+    We can be linear (same speed start to end).
+    We can ease in our ease out (slow start or slow end).
+    Lastly we can use cubic-bezier to define our own speed curve.
+*/
+
+/* Set the styling for our timing class (our divs) and set a default transition */
+
+
+/* Target all divs inside our timing_div to set the properties of our transition upon hovering over the larger container div. */
+
+
+/* Set the timing function of each individual div in the .timing class */
+
+
+/*
+    The cubic bezier curve is based on four points: P0, P1, P2, and P3. 
+    P0 is set by default to (0, 0) and P3 is set by default to (1, 1).
+    The curve will stretch differently depending on what coordinates you give for points P1 and P2.
+    (x1, y1, x2, y2) The values must be between 0 and 1.
+*/

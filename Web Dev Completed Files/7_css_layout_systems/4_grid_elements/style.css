@@ -1,0 +1,124 @@
+/*
+    Let's style all our divs that are inside our grid_wrappers so we can see them.
+    We will give them a set width and height.
+*/
+.grid_item{
+    background: lightblue;
+    border: 1px solid black;
+    box-shadow: -5px 5px 10px gray;
+    width: 100%;
+    height:100%;
+
+    /* 
+        If I easily want to center the text of the div in the middle of the square
+        I can turn the div into a flex container and use justify-content and align-items!
+    */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Let's create our first 2x2 grid */
+#grid_wrapper_1{
+    background: lightcoral;
+    width:500px;
+    height:500px;
+
+    display: grid;
+    grid-template-rows: repeat(2, 200px);
+    grid-template-columns: repeat(2, 200px);
+    gap: 10px;
+    /* We can try to adjust how our divs are lining up within each row/column */
+    justify-content: center;
+    align-items: center;
+    /* align-items effect the alignment of items on the current line. It does not work across multiple lines!*/
+}
+
+#short{
+    height:50px;
+}
+  
+#grid_wrapper_2{
+    background: lightcoral;
+    width:500px;
+    height:500px;
+
+    display: grid;
+    grid-template-rows: repeat(2, 200px);
+    grid-template-columns: repeat(2, 200px);
+    gap: 10px;
+    /* We can try to adjust how our divs are lining up within each row/column */
+    justify-content: center;
+    /* align-content effects the alignment of items across mulitple lines!*/
+    align-content: center;
+}
+
+#grid_wrapper_3{
+    background: lightcoral;
+    width:1000px;
+    height:1000px;
+
+    display: grid;
+    grid-template-rows: repeat(4, 200px);
+    grid-template-columns: repeat(4, 200px);
+    gap: 10px;
+   
+    justify-content: center;
+    align-items: center;
+}
+
+#grid_wrapper_4{
+    background: lightcoral;
+    width:1000px;
+    height:1000px;
+
+    display: grid;
+    grid-template-rows: repeat(4, 200px);
+    grid-template-columns: repeat(4, 200px);
+    gap: 10px;
+    
+    justify-content: center;
+    align-content: center;
+}
+
+/* We want build the folllowing grid layout */
+/*
+       1    2    3
+      _____________
+    1|_____________|
+    2|   |         |
+    3|   |_________|
+    4|___|____|____| 
+    5|_____________|  
+*/
+
+#grid_wrapper_5{
+    background: lightcoral;
+    width:1000px;
+    height:1000px;
+
+    display: grid;
+    grid-auto-rows: minmax(150px, auto);
+    grid-template-columns: repeat(3, 30%);
+    gap: 10px;
+    
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+
+#div_1{
+    grid-column: span 3;
+}
+
+#div_2{
+    grid-row: span 3;
+}
+
+#div_3{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+#div_6{
+    grid-column: span 3;
+}

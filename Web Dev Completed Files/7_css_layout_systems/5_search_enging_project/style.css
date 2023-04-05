@@ -1,0 +1,149 @@
+/*
+    Light Gray - #F8F9FA
+    Border Gray - #9AA0A6
+    Background Gray - #F2F2F2
+    Blue - #1A73E8
+    Shadow Green - #6E9A9F
+    Dark Blue (used as img background) - #1A73E855
+    Black - #202124
+    Google Red - rbg(255, 88, 88)
+    Google Yellow - rgb(255, 255, 135)
+    Google Green - rgb(7, 210, 7)
+    Google Blue - rgb(3, 3, 172)
+*/
+
+/*Header Styling*/
+header{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #f8f9fa;
+}
+
+header h1{
+    background: #1a73e8;
+    color:#f8f9fa;
+    padding:25px;
+    border: 2px solid #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #6e9a9f;
+    font-family: 'Vidaloka', serif;
+    font-size: 6rem;
+}
+
+.red{
+    color:rgb(255, 88, 88);
+}
+
+.yellow{
+    color:rgb(255, 255, 135);
+}
+
+.green{
+    color:rgb(7, 210, 7);
+}
+
+.blue{
+    color:rgb(3, 3, 172);
+}
+
+.small_img{
+    width:10%;
+}
+
+.medium_img{
+    width:50%;
+}
+
+.large_img{
+    width:75%;
+}
+
+img{
+    background: #1a73e855;
+    padding: 25px;
+    border: 2px solid #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #6e9a9f;
+}
+
+/*Search Styling*/
+#search{
+    text-align: center;
+    margin: 50px;
+}
+
+#search input{
+    width:500px;
+    height:20px;
+    border:1px solid #9aa0a6;
+    border-radius:25px;
+    padding:10px 20px;
+    font-size:
+    1.0rem;
+}
+
+.btn{
+    width:12%;
+    margin:20px 5px;
+    padding:10px;
+    border:none;
+    border-radius: 10px;
+    background: #f8f9fa;
+    color:#202124;
+    font-size: 1.0rem;
+}
+
+/*News Styling*/
+#news_headline{
+    background: #f8f9fa;
+    color: #202124;
+    text-align: center;
+    width: 50%;
+    margin:auto;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    font-size: 2.0rem;
+}
+
+#news{
+    display: grid;
+    grid-auto-rows: minmax(400px, auto);
+    grid-template-columns: repeat(3, 30%);
+    gap:10px;
+    justify-content: center;
+    margin: 10px;
+}
+
+.news_item{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    background: #f8f9fa;
+    color:#202124;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    border: 1px solid #9aa0a6;
+}
+
+/*Footer Styling*/
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #f2f2f2;
+    border-radius: 25px;
+    margin-top:25px;
+}
+
+footer p{
+    background: #1a73e8;
+    color: #f8f9fa;
+    padding: 15px;
+    border: 1px solid #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #6e9a9f;
+    font-family: 'Vidaloka', serif;
+}

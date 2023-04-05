@@ -1,0 +1,46 @@
+/*
+    A css pseudo class is a keyword added to a selector that specifies a special state of the seleced element.  
+    It can be used to alter values of the selector in that state.
+    Some example sates include if you are hovering, clicking, or focused on an element.
+*/
+
+/* Style the whole body with a background color */
+
+
+/* Use flexbox on my btn wrapper to put two buttons in a line */
+
+
+/* Regular style for all buttons */
+
+
+/* 
+    Pseudo class selector for btn_hover. 
+    We will call the class name (btn_hover) followed by a colon and the pseudo class we want to select.
+    The hover class will trigger and make changes when a user hovers over the button. 
+*/
+
+
+/* 
+    Pseudo class selector for btn_active.
+    We will call the class name (btn_active) followed by a colon and the pseudo class we want to select.
+    The active class will trigger and make changes when the element is active (clicked).
+*/
+
+
+/* Use flexbox on my input wrapper to put two buttons in a line */
+
+
+/*
+    Pseudo class selector for input_active.
+    The focus class will trigger and make changes when the element is in focus (selected).
+*/
+
+
+/* You can chain pseudo classes together */
+
+
+/*
+    The nth-of-type pseudo-class is specified with a single argument.
+    This argument represents the pattern for matching elements.
+    This class matches elements based on their position among other elements with the same tag.
+*/  

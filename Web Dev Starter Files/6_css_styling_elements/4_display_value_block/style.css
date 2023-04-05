@@ -1,0 +1,39 @@
+/* 
+    Every HTML element has a default display value; block, inline or inline-block.
+
+    A block-level element ALWAYS starts on a new line and takes up the full horizontal width available.
+    We can specify the width of a block level element and it will take up that full width!
+    Commonly used block elements are <p>, <h1>, <ul>, <ol>, <li>, and  <div>.
+    
+    An inline-level element does not start on a new line and only takes up as much horizontal width as it needs.
+    We cannot specify the width of an inline element as they will only be as wide as needed.
+    Commonly used inline elmeents are <button>, <a>, <image>, <input>, and <span>.
+    
+    We can override the default display value to change the behavoir of the element.
+*/
+
+/* By default, <h> are block elements.  However, we can override and make them inline.*/
+
+
+
+
+
+/* By default, <p> are block elements.  However, we can override and make them inline.*/
+
+
+
+
+/*  
+    By default, divs are block elements.
+    When we override and make them inline, we loose the ability to set the width and height.
+    YOU CANNOT SET WIDTH AND HEIGHT FOR INLINE ELEMENTS!  They are only as big as needed!
+*/
+
+
+
+
+/*
+    We can fix this buy setting the display to inline-block.
+    Inline-block elements do not add a line break after the element so elements can sit next to each other.
+    They also take up the full available horizontal width; so we can set their width!
+*/

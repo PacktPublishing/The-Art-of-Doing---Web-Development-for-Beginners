@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mike's T-shirt Store</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+        <script defer src="design_script.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <img src="shirt_header.jpg" class="small_img">
+            <div>
+                <h1>Mike's T-Shirt Store</h1>
+                <h6>Where we dress, for success!</h6>
+            </div>
+            <img src="shirt_header.jpg" class="small_img">
+        </header>
+
+        <main id="tool">
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="design.html">Design</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="sizing.html">Sizing</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div id="tool_div">
+                <h2>Design Your Shirt</h2>
+                <div id="tool_calc">
+                    <h3>Select Your Size</h3>
+                    <form id="size_form">
+                        <input type="radio" id="small" value="small" name="size">
+                        <label for="small">Small</label>
+                        <input type="radio" id="medium" value="medium" name="size">
+                        <label for="medium">Medium</label>
+                        <input type="radio" id="large" value="large" name="size">
+                        <label for="large">Large</label>
+                        <input type="radio" id="extra" value="extra" name="size">
+                        <label for="extra">Extra Large</label>
+                    </form>
+
+                    <h3>Select Your Style</h3>
+                    <div>
+                        <label for="style">Choose A Shirt Style</label>
+                        <select id="style" name="shrit_style">
+                            <option value="short">Short Sleeve</option>
+                            <option value="crew">Crew</option>
+                            <option value="polo">Polo</option>
+                            <option value="dress">Dress</option>
+                            <option value="jersey">Jersey</option>
+                        </select>
+                    </div>
+
+                    <h3>Select Your Color</h3>
+                    <div>
+                        <input type="color" id="color">
+                    </div>
+                </div>
+
+                <div id="tool_values">
+                    <h3>Here Is Your Shirt!</h3>
+                    <img id="shirt_img" src="shirt_icon.png" class="small_img">
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Call today:  1-239-867-5309</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+h2{
+    background: lightgreen;
+}
+
+a{
+    background: paleturquoise;
+}
+
+img{
+    background: palevioletred;
+    width:100px;
+}
+
+#grid_wrapper{
+    display:grid;
+    grid-template-rows: repeat(2, 500px);
+    grid-template-columns: repeat(2, 45%);
+    gap:25px;
+}
+
+.flex_item{
+    background: lightsalmon;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

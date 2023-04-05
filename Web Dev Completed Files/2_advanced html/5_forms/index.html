@@ -1,0 +1,59 @@
+<!--
+    The form tag <form><\form> is a great way to hold and organize different types of input elements.
+    It essentially serves as a 'CONTAINER' for all of these elements to sit inside.
+    When you place a button inisde a form, we can use that button to submit all of the 
+    input data in the form or reset data in the form.
+-->
+<h1>Working with Forms!</h1>
+
+<!--
+    We can use labels for all inputs by giving them an id just like we did with radio buttons.
+    We should also give each input an id and name like the radio buttons.
+    This will help later in the course when we try to process the form data using javascript.
+    The value we do not need to set as the user will set the value via their input!
+    We can make the inputs required and set min and max lengths.
+
+    We can specify our button types as submit or reset.
+    The default button type is submit but it is good practice to declare it.
+    Reset will clear the attached form of all data.
+
+    Forms have an action attribute that specify where to send all of the collected data
+    When the form is submitted.  We can send to another website or a page in our directory.
+    Each piece of data we send will have a name and a value.  
+
+    Let's create another html file called page1.html for this example.
+-->
+<h2>Here is our input fields/buttons inside a form</h2>
+<form action="page1.html">
+    <label for="username">Enter a Username: </label>
+    <input type="text" id="username" name="my_username" placeholder="Enter Username" required>
+
+    <label for="password">Enter a Password</label>
+    <input type="password" id="password" name="my_password" placeholder="Enter Password" required minlength="4" maxlength="8">
+
+    <button type="submit">Submit Form</button>
+    <button type="reset">Reset Form</button>
+</form>
+
+<!-- 
+    We were actually sending our data in the example above but we don't know how to process it.
+    Note that the username and password are in the URL above when we hit submit!
+    We can send our data to websites that do know how to process it!  
+    We just have to make sure that we follow their naming conventions for the data that is passed.
+-->
+<h2>Hijacking Search Engines</h2>
+<h3>Search Google</h3>
+<form action="https://www.google.com/search">
+    <label for="search_item">Search Google: </label>
+    <input type="text" id="search_item" name="q" required>
+    <button type="submit">Search Google</button>
+    <button type="reset">Clear</button>
+</form>
+
+<h3>Search Bing</h3>
+<form action="https://www.bing.com/search">
+    <label for="search_item">Search Bing: </label>
+    <input type="text" id="search_item" name="q" required>
+    <button type="submit">Search Bing</button>
+    <button type="reset">Clear</button>
+</form>

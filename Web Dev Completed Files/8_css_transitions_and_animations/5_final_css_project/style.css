@@ -1,0 +1,143 @@
+/* Header Styling */
+header{
+    height: 350px;
+    background-image: url("computer.jpg");
+    background-size: cover;
+    background-position: 0% 35%;
+    color:#d552b0;
+    padding-left: 40px;
+    padding-top:10px;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+header h1{
+    font-size: 2.5rem;
+    box-shadow: 0px 10px 10px -10px #56aff8;
+    display:inline;
+}
+
+header nav a {
+    display: inline-block;
+    color: #d552b0;
+    border: 2px solid #d552b0;
+    border-radius: 100px;
+    width:75px;
+    padding:10px 30px;
+    text-align:center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.5s, border-color 0.5s, box-shadow 0.5s, transform 0.5s;
+}
+
+header nav a:hover{
+    color: white;
+    border-color:#56aff8;
+    box-shadow: 0px 10px 10px -10px #56aff8;
+    transform: translateY(-5px);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*Footer Styling*/
+footer{
+    font-family: 'Share Tech Mono', monospace;
+    color:#0e0814;
+    text-align: center;
+}
+
+/* Home Page Styling */
+main{
+    padding:10px;
+    box-sizing: border-box;
+}
+
+main h2, main h3{
+    font-family: 'Share Tech Mono', monospace;
+    color:#0e0814;
+    box-shadow: 0px 10px 10px -10px #56aff8;
+    display: inline;
+}
+
+#primary{
+    display: flex;
+}
+
+#primary_1{
+    width:66%;
+}
+
+#primary_2{
+    width:33%;
+    background:#0e0814;
+    color:white;
+    padding: 5px 20px;
+    margin:10px;
+    border: 2px solid #56aff8;
+    border-radius: 5%;
+}
+
+#primary_2 h3{
+    color: white;
+}
+
+#secondary{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+#secondary article{
+    width: 30%;
+    background: #d552b0;
+    border: 2px solid #d552b0;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: background-color 1.5s, color 1.5s, box-shadow 1.5s, transform 1.5s;
+}
+
+#secondary article:hover{
+    background-color: #56aff8;
+    color:white;
+    box-shadow: 0px 10px 10px -10px #56aff8;
+    transform: translateY(-5px);
+    border: 5px solid #0e0814;
+}
+
+/* Join Page Styling */
+form{
+    display:flex;
+    justify-content: center;
+    margin: 100px 0px;
+}
+
+input{
+    width:250px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.2rem;
+}
+
+input:focus{
+    background: #d552b090;
+}
+
+button{
+    width: 150px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.2rem;
+    background: #0e0814;
+    color:#d552b0;
+    border: 2px solid #d552b0;
+    padding: 0px 10px;
+    margin: 0px 5px;
+    transition: color 0.5s, border-color 0.5s, box-shadow 0.5s, transform 0.5s;
+}
+
+button:hover{
+    color:white;
+    border-color:#56aff8;
+    box-shadow: 0 10px 10px -10px #56aff8;
+    transform: translateY(-5px);
+    text-decoration: underline;
+    cursor: pointer;
+}

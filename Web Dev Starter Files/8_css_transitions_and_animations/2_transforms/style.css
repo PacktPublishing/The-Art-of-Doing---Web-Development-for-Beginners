@@ -1,0 +1,18 @@
+/*
+    The transform property appiles a 2d or 3d transformation to an element.
+    We can rotate, scale, translate, skew, etc...
+    rotate - a transformation that rotates an element around a fixed point without deforming it.
+    scale - a transformation that resizes an element.
+    translate - a transformation allows you to move an element from one place to another along an axis.
+    skew - a transformation that distorts each point within an element by a certain angle in the horizontal and vertical directions. 
+*/
+
+
+/* We will use nth-of-type pseudo-classes to select our h2 elements */
+
+
+/* Various transform option */
+
+
+
+/* We can have multiple transforms on one line */

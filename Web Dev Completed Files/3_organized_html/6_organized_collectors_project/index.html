@@ -1,0 +1,56 @@
+<!-- 
+    The Collectors Project Organized
+
+    This project will be a recreation of your previous Collectors Project.
+    This time however you must use proper HTML structure and organization. 
+    Tags should be nested inside of a container (div/span) when appropriate.
+    Containers should be given a proper class or id attribute.
+
+    Although it is not best practice to style inside of html,
+    you will be asked to give all your containers a unique background color using the style attribute
+    so we can better see the organization of the containers.  
+-->
+
+<!-- 
+    Your index page should have the following:
+        A 'header' or title section/title banner at the top of your page.
+        A log in form with required username, password, submit, and reset buttons. 
+        When hitting submit you should be directed to the main.html page.
+-->
+
+<!--
+    To organize your page, you MUST use proper html structure.
+    You MUST also have divs with the following names (id vs class)...
+        header
+        main
+    You decide what content should go in them.
+    You can name your other divs as you see fit.   
+    Remember, each div should be styled with a different background color.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign In</title>
+    </head>
+
+    <body>
+        <div id="header" style="background:lightcoral">
+            <h1>Welcome to the Pokemon Trader</h1>
+            <hr>
+        </div>
+
+        <div id="main" style="background:lightgreen">
+            <h2>Please Log In</h2>
+            <form action="main.html">
+                <label for="username">Enter a Username: </label>
+                <input type="text" id="username" name="my_username" placeholder="Enter Username" required>
+
+                <label for="password">Enter a Password: </label>
+                <input type="password" id="password" name="my_password" placeholder="Enter Password" required minlength="4" maxlength="8">
+
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </form>
+        </div>
+    </body>
+</html>

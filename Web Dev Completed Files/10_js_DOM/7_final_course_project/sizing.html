@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mike's T-shirt Store</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+        <script defer src="size_script.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <img src="shirt_header.jpg" class="small_img">
+            <div>
+                <h1>Mike's T-Shirt Store</h1>
+                <h6>Where we dress, for success!</h6>
+            </div>
+            <img src="shirt_header.jpg" class="small_img">
+        </header>
+
+        <main id="tool">
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="design.html">Design</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="sizing.html">Sizing</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div id="tool_div">
+                <h2>Size Calculator</h2>
+                <div id="tool_calc">
+                    <div>
+                        <label for="feet">Feet</label>
+                        <input type="number" id="feet" min="0">
+                    </div>
+
+                    <div>
+                        <label for="inches">Inches</label>
+                        <input type="number" id="inches" min="0" max="11">
+                    </div>
+
+                    <div>
+                        <label for="pounds">Pounds</label>
+                        <input type="number" id="pounds" min="50">
+                    </div>
+
+                    <div>
+                        <button id="tool_btn">Determine Size</button>
+                    </div>
+                </div>
+
+                <div id="tool_values">
+                    <h3>You are</h3>
+                    <h3>We recommend a size: </h3>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Call today:  1-239-867-5309</p>
+        </footer>
+    </body>
+</html>

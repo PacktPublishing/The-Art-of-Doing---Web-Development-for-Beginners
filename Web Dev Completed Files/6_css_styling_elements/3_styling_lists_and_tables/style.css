@@ -1,0 +1,42 @@
+/* Changing the styling of lists */
+#list_1{
+    list-style-type: circle; /* Sets the list marker */
+    list-style-position: inside; /* Changes the alignment of the list marker relative to the item*/
+    font-size: 1.25rem;
+    color:darkblue;
+    background-color: lightgray;
+}
+
+#list_2{
+    list-style-image: url('check.png');
+    list-style-position: outside; /*default value*/
+    font-size: 1.5rem;
+    color:lightblue;
+    background-color: darkblue;
+}
+
+#list_3{
+    list-style-type: upper-roman;
+    color:black;
+    background: palegoldenrod;
+}
+
+/* Chaning the style of tables */
+table{
+    border: 3px solid black;
+    width: 50%;
+    margin:auto;
+}
+
+th{
+    border: 1px solid black;
+    font-size: 2rem;
+    color:white;
+    background: #0000ff;
+}
+
+td{
+    text-align: center;
+    background-color: #0000ff55;
+    padding:10px 5px;
+}

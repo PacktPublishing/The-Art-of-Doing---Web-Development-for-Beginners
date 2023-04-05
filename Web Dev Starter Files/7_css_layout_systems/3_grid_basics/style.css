@@ -1,0 +1,71 @@
+/*
+    Grid is a way to layout items in two dimensions that can change their size dynamically inside a container.
+    Inside your grid container, you have various elements that take up different position inside the grid.
+    These elements are seperated by grid gaps.  Your grid is defined by a set number or rows and columns.
+*/
+
+/* Let's style each of our divs in seperate grid containers */
+
+
+/* We will apply different grid styilng options to each of our grid containers */
+
+
+    /* Apply grid to our grid container.  This changes nothing though! */
+  
+    /* 
+        Grid doesnt define any rows or columns for us to work with, we have to do it! 
+        We just have to specify the size of each row/column.
+        Lets make a 2x3 grid.
+    */
+
+    
+
+    /* We can add spacing between our rows and columns with the gap property */
+
+    
+
+    /*  
+        We can position our container using the justify-content property.  This aligns on the horizontal axis.
+        We can consider the horizontal axis to be the 'main axis' when working with css grid.
+    */
+
+
+
+
+    /* 
+        We can use the repeat command to repeat columns a set number of times of a set size. 
+        Lets make a 4x4 grid.  Since we don't have enough elements; the grid spaces will just be empty.
+    */
+
+   
+
+    /* We can set both gaps at once */
+
+    
+
+
+    /*
+        We can use grid-auto rows if we don't know how many rows we will have and set them to a desired size.
+        This will create as many rows as we need given the number of columns and elements we have.
+    */
+   
+    /* We can use the fraction unit to dynamically size our columns to take up a fraction of the page */
+
+
+
+   
+    /*grid-auto-rows: 150px;*/
+    /* 
+        We can see that if we have grid-auto-rows, our content can just overflow out of the element if not big enough.
+        So we can use minmax() to specify the minimum and maximum row size.  Auto will adjust to fit the content.
+    */
+
+
+
+
+    /* We can use column and row start/end to position on each element where we want it in our grid. */
+
+
+
+
+

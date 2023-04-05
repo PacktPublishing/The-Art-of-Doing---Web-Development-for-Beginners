@@ -1,0 +1,27 @@
+<!-- 
+    The Collectors Project 
+    This project will build multiple linked pages for something that is a collection.
+    The collection should have multiple items in it where you can devote a single page
+    to a given item in the collection.
+-->
+
+<!-- 
+    Your index page should have the following:
+        A 'header' or title section/title banner at the top of your page.
+        A log in form with required username, password, submit, and reset buttons. 
+        When hitting submit you should be directed to the main.html page.
+-->
+<h1>Welcome to the Pokemon Trader</h1>
+<hr>
+
+<h2>Please Log In</h2>
+<form action="main.html">
+    <label for="username">Enter a Username: </label>
+    <input type="text" id="username" name="my_username" placeholder="Enter Username" required>
+
+    <label for="password">Enter a Password: </label>
+    <input type="password" id="password" name="my_password" placeholder="Enter Password" required minlength="4" maxlength="8">
+
+    <button type="submit">Submit</button>
+    <button type="reset">Clear</button>
+</form>

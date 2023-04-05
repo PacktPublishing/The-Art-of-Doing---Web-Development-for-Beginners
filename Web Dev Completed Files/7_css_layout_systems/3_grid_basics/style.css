@@ -1,0 +1,144 @@
+/*
+    Grid is a way to layout items in two dimensions that can change their size dynamically inside a container.
+    Inside your grid container, you have various elements that take up different position inside the grid.
+    These elements are seperated by grid gaps.  Your grid is defined by a set number or rows and columns.
+*/
+
+/* Let's style each of our divs in seperate grid containers */
+.grid_item{
+    font-size: 25px;
+    padding:5px;
+    margin:2px;
+}
+
+#grid_container_1 .grid_item{
+    background: palegreen;
+}
+#grid_container_2 .grid_item{
+    background: paleturquoise;
+}
+#grid_container_3 .grid_item{
+    background: palevioletred;
+}
+#grid_container_4 .grid_item{
+    background: palegoldenrod;
+}
+#grid_container_5 .grid_item{
+    background: papayawhip;
+}
+
+/* We will apply different grid styilng options to each of our grid containers */
+#grid_container_1{
+    /* Apply grid to our grid container.  This changes nothing though! */
+    display: grid;
+  
+    /* 
+        Grid doesnt define any rows or columns for us to work with, we have to do it! 
+        We just have to specify the size of each row/column.
+        Lets make a 2x3 grid.
+    */
+    grid-template-rows: 100px 200px;
+    grid-template-columns: 200px 150px 100px;
+
+    /* We can add spacing between our rows and columns with the gap property */
+    row-gap: 20px;
+    column-gap: 10px;
+    
+    /*  
+        We can position our container using the justify-content property.  This aligns on the horizontal axis.
+        We can consider the horizontal axis to be the 'main axis' when working with css grid.
+    */
+    justify-content: center;
+}
+
+#grid_container_2{
+    display: grid;
+    /* 
+        We can use the repeat command to repeat columns a set number of times of a set size. 
+        Lets make a 4x4 grid.  Since we don't have enough elements; the grid spaces will just be empty.
+    */
+    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: repeat(4, 50px);
+
+    /* We can set both gaps at once */
+    gap: 10px;
+    justify-content: end;
+}
+
+#grid_container_3{
+    display: grid;
+   /*
+        We can use grid-auto-rows if we don't know how many rows we will have and set them to a desired size.
+        This will create as many rows as we need given the number of columns and elements we have.
+    */
+    grid-auto-rows: 100px;
+    /* We can use the fraction unit to dynamically size our columns to take up a fraction of the page */
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+}
+
+#grid_container_4{
+    display: grid;
+    /*grid-auto-rows:150px;*/
+    grid-template-columns: 150px 300px;
+    /* 
+        We can see that if we have grid-auto-rows, our content can just overflow out of the element if not big enough.
+        So we can use minmax() to specify the minimum and maximum row size.  Auto will adjust to fit the content.
+    */
+    grid-auto-rows: minmax(150px, auto);
+}
+
+#grid_container_5{
+    display: grid;
+    grid-auto-rows: minmax(150px, auto);
+    grid-template-columns: 70% 20%;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* We can use column and row start/end to position on each element where we want it in our grid. */
+#grid_item_1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#grid_item_2{
+    grid-column: 1/-1;
+}
+
+#grid_item_3{
+    grid-row-start:3;
+    grid-row-end:5;
+}
+
+#grid_item_4{
+    grid-row: 3/5;
+}
+
+#grid_item_5{
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+ 
+
+
+
+
+
+    
+
+
+  
+
+   
+
+
+
+
+
+   
+
+
+
+

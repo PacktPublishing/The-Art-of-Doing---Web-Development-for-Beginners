@@ -1,0 +1,105 @@
+/*
+    Transitions allow you to change a property value smoothly over a given duration.
+    Instead of having property changes take effect immediately, you can cause the changes in a property to take place over a period of time. 
+    You have to specify two things:  The property to change and the duration.
+*/
+
+/* Set the styling for our transition class (our divs) */
+.transition{
+    background: blue;
+    width: 300px;
+    height: 300px;
+    margin:10px 50px;
+}
+
+/* 
+    Give a transition for background color and border radius of 2s 
+    You must give a transition property (the name of the css property to which the transition should be applied)
+    You must give a transition duration (the duration over which the transition should occur)
+*/
+#div1{
+    transition: background-color 2s, border-radius 2s;
+}
+
+/*
+    Now that the transition property is set for div1, we will trigger the change when we hover over the div.
+    Rather than changing these properties instantaneously, the changes will occur over the duration specified in the transition.
+*/
+#div1:hover{
+    background-color: pink;
+    border-radius: 50%;
+}
+
+/* Give a transition for margin, shadow, and opacity of 4s */
+#div2{
+    transition: margin-left 4s, box-shadow 4s, opacity 4s;
+}
+
+/* Specify that the transition should occur when we click div2 */
+#div2:active{
+    margin-left: 75%;
+    box-shadow: 20px 20px 5px black;
+    opacity: .1;
+}
+
+/* Give a transition for transform and background color of 2s */
+#div3{
+    transition: transform 2s, background-color 2s;
+}
+
+/* Sepcify that the transition should occur when we hover over div3 */
+#div3:hover{
+    transform: rotate(90deg) translateX(-50px);
+    background-color: purple;
+    border-radius: 50%;
+}
+
+/* 
+    The transition-timing-function property specifies the speed curve of the transition effect.
+    We can ease (slow start, then fast, slow end).
+    We can be linear (same speed start to end).
+    We can ease in our ease out (slow start or slow end).
+    Lastly we can use cubic-bezier to define our own speed curve.
+*/
+
+/* Set the styling for our timing class (our divs) and set a default transition */
+#timing_div{
+    background: lightpink;
+}
+
+.timing{
+    background: lightgreen;
+    width:50px;
+    height:50px;
+    margin:10px 50px;
+    transition: margin-left 3s, background-color 3s;
+}
+
+/* Target all divs inside our timing_div to set the properties of our transition upon hovering over the larger container div. */
+#timing_div:hover div{
+    margin-left: 90%;
+    background: lightcoral;
+}
+
+/* Set the timing function of each individual div in the .timing class */
+.timing:nth-of-type(1){
+    transition-timing-function: ease-in;
+}
+
+.timing:nth-of-type(2){
+    transition-timing-function: ease-out;
+}
+
+.timing:nth-of-type(3){
+    transition-timing-function: linear;
+}
+
+/*
+    The cubic bezier curve is based on four points: P0, P1, P2, and P3. 
+    P0 is set by default to (0, 0) and P3 is set by default to (1, 1).
+    The curve will stretch differently depending on what coordinates you give for points P1 and P2.
+    (x1, y1, x2, y2) The values must be between 0 and 1.
+*/
+.timing:nth-of-type(4){
+    transition-timing-function: cubic-bezier(0.45, .45, .95, .2);
+}

@@ -1,0 +1,135 @@
+<!--
+    The main page is your home page for your site.  
+    It should have the following:
+        A 'header' or title section/title banner at the top of your page
+        A minimum of 2 paragraphs to describe your 'collection' using various styling tags
+        A minimum of 3 images
+        A minimum of 3 links to 3 different internal web pages as a 'navigation bar'
+        A minimum of 3 links to 3 different external web pages
+        A minimum of 1 link to 1 different section of THIS page
+        Appropriate heading, paragraph, list, and table tags
+        A search engine 'hijack' to search more about your 'collection' item with a search and clear button
+        A 'footer' or bottom section containing common info across all pages
+-->
+
+<!--
+    To organize your page, you MUST use proper html structure.
+    You MUST also have divs with the following names (id vs class)...
+        header
+        main
+        article
+        nav
+        footer
+    You decide what content should go in them.
+    You can name your other divs as you see fit.   
+    You must also use a minimum of 2 spans to style the text background within a paragraph.
+    Remember, each div should be styled with a different background color.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Pokemon Trader</title>
+    </head>
+
+    <body>
+        <div id="header" style="background: lightcoral">
+            <h1 id="top">Welcome to the Pokemon Trader</h1>
+            <img src="poke.png" alt="pokeball to catch pokemon">
+            <img src="poke.png" alt="pokeball to catch pokemon">
+            <img src="poke.png" alt="pokeball to catch pokemon">
+            <hr>
+        </div>
+
+        <div id="main" style="background: lightgoldenrodyellow">
+            <div class="article" style="background: lightcyan">
+                <h2>A Brief History of Pokemon (from wikipedia)</h2>
+                <p>
+                    <span class="text_wrapper" style="background:lightgoldenrodyellow"><b>Pokemon</b> (an abbreviation for <i>Pocket Monsters</i> in Japan)</span> is a Japanese media franchise 
+                    managed by The Pokémon Company, a company founded by Nintendo, Game Freak, and Creatures. 
+                    The franchise was created by Satoshi Tajiri in 1996, and is centered around fictional 
+                    creatures called "Pokemon." In Pokemon, Pokemon Trainers are people who catch, train, care 
+                    for, and battle with Pokémon. The English slogan for the franchise is "Gotta Catch Em All!".
+                    <u>There are currently 905 Pokémon species</u>.
+                </p>
+
+                <p>
+                    The franchise began as Pocket Monsters: Red and Green (later released outside of Japan as 
+                    Pokémon Red and Blue), a pair of video games for the original Game Boy handheld system 
+                    that were developed by Game Freak and published by Nintendo in February 1996. 
+                    Pokémon soon became a media mix franchise adapted into various different media. 
+                    <span class="text_wrapper" style="background:lightgoldenrodyellow">Pokémon is estimated to be the highest-grossing media franchise of all time.</span> The Pokémon 
+                    video game series is the third best-selling video game franchise of all time with more than
+                    440 million copies sold and one billion mobile downloads. The Pokémon video game series 
+                    spawned an anime television series that has become the most successful video game 
+                    adaptation of all time with over 20 seasons and 1,000 episodes in 192 countries.
+                    The Pokémon Trading Card Game is the highest-selling trading card game of all time with 
+                    over 43.2 billion cards sold. In addition, the Pokémon franchise includes the world's 
+                    top-selling toy brand an anime film series, a live-action film (Detective Pikachu), 
+                    books, manga comics, music, merchandise, and a temporary theme park. The franchise is also 
+                    represented in other Nintendo media, such as the Super Smash Bros. series, where various 
+                    Pokémon characters are playable.
+                </p>
+                <hr>
+            </div>
+
+            <div id="nav" style="background:lightpink">
+                <h2>Learn More About the Original Three</h2>
+                <a href="bulb.html"><img src="bulb1.png" alt="bulbasuar pokemon 001" style="width: 400px;"></a>
+                <a href="char.html"><img src="char1.png" alt="charmander pokemon 004" style="width: 400px;"></a>
+                <a href="squirt.html"><img src="squirt1.png" alt="squirtle pokemon 007" style="width: 400px;"></a>
+                <hr>
+            </div>
+
+            <div class="external_links" style="background:lightskyblue">
+                <h2>Learn More About Pokemon</h2>
+                <p>
+                    Learn more about Pokemon from the <a href="https://www.pokemon.com/us/pokedex/" target="_blank">Pokedex!</a>
+                </p>
+                <p>
+                    Learn more about <a href="https://www.nintendo.com/" target="_blank">Nintendo!</a>
+                </p>
+                <p>
+                    Learn more about <a href="https://bulbapedia.bulbagarden.net/wiki/History_of_Pok%C3%A9mon" target="_blank">the history of Pokemon!</a>
+                </p>
+                <hr>
+            </div>
+
+            <div class="rankings" style="background:aquamarine">
+                <h2>My Top Pokemon (no order)</h2>
+                <ul>
+                    <li>Charizard</li>
+                    <li>Golem</li>
+                    <li>Jiggly Puff</li>
+                    <li>Pikachu</li>
+                    <li>Gyrados</li>
+                    <li>Mew</li>
+                </ul>
+            </div>
+
+            <div class="search" style="background:palevioletred">
+                <h2>Search About Any Pokemon!</h2>
+                <form action="https://www.google.com/search">
+                    <label for="search_tem">Pokemon Name: </label>
+                    <input type="text" id="search_item" name="q" required>
+
+                    <button type="submit">Search For Pokemon</button>
+                    <button type="reset">Clear</button>
+                </form>
+                <hr>
+            </div>
+        </div>
+
+        <div id="footer" style="background: lightgoldenrodyellow">
+            <img src="poke.png" alt="pokeball to catch pokemon">
+            <img src="poke.png" alt="pokeball to catch pokemon">
+            <img src="poke.png" alt="pokeball to catch pokemon">
+            <a href="#top">Home</a>
+            <a href="bulb.html">Bulbasaur</a>
+            <a href="char.html">Charmander</a>
+            <a href="squirt.html">Squirtle</a>
+            <img src="poke.png" alt="pokeball to catch pokemon">
+            <img src="poke.png" alt="pokeball to catch pokemon">
+            <img src="poke.png" alt="pokeball to catch pokemon">
+        </div>
+    </body>
+</html>
